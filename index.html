@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nawang Alan Andrian | Portfolio</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="96x96">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      overflow-x: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #4e4ef3, #6060ff);
+    }
+    .img-profil {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .jumbotron {
+      padding: 5rem 1rem;
+      background: linear-gradient(135deg, #4e4ef3, #6060ff);
+      color: white;
+    }
+    .jumbotron .btn {
+      margin-top: 20px;
+    }
+    section {
+      padding: 70px 0;
+    }
+    .section-title {
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-weight: bold;
+      color: #4e4ef3;
+    }
+    .skill-badge {
+      margin: 5px;
+      font-size: 0.95rem;
+      padding: 10px 15px;
+      border-radius: 25px;
+    }
+    .project-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: linear-gradient(90deg, #4e4ef3, #6060ff);
+      color: white;
+    }
+    footer a { color: white; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Nawang Alan Andrian</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section class="jumbotron text-center" id="home">
+    <img src="img/NAW127.png" alt="Nawang Alan Andrian" class="img-profil rounded-circle">
+    <h1 class="display-5 mt-3 fw-bold">Hello, I'm <span class="text-warning">Nawang Alan Andrian</span></h1>
+    <p class="lead">S1 Sistem Informasi | Web & Mobile Developer</p>
+    <!-- Tombol Download CV -->
+    <a href="https://drive.google.com/file/d/1kz3EDmV6m6VSSu6C5O69X-2uifuxJsB-/view?usp=sharing" download="CV_Nawang_Alan_Andrian.pdf" 
+      class="btn btn-light btn-lg shadow" target="_blank">
+      <i class="fas fa-download"></i> Download CV
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2><i class="fas fa-user-circle"></i> About Me</h2>
+        <hr class="w-25 mx-auto">
+      </div>
+      <p class="text-center fs-5">
+        Saya lulusan S1 Sistem Informasi dari Universitas Muria Kudus dengan minat besar pada pengembangan teknologi 
+        dan pemecahan masalah digital. Pengalaman sebagai Asisten Dosen Praktikum mengasah kemampuan komunikasi 
+        dan pemahaman teknis, terutama dalam pengembangan aplikasi berbasis web dan mobile. 
+        Terampil dalam perancangan sistem menggunakan UML & SDLC, desain UI/UX, serta manajemen database.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <hr class="w-25 mx-auto">
+      </div>
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">Universitas Muria Kudus</h5>
+          <p class="mb-1">S1 Sistem Informasi (2021 - 2025) | IPK 3,95</p>
+          <p><b>Fokus Bidang:</b> Web & Mobile Development, UML & SDLC, UI/UX, RDBMS & Normalisasi Tabel</p>
+          <p><b>Proyek:</b> Sistem Seleksi Calon Peserta Pelatihan Berbasis Web di UPTD BLK Kudus 
+             dengan Metode SAW & Kombinasi AHP SAW</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <hr class="w-25 mx-auto">
+      </div>
+      <h5 class="fw-bold">Asisten Dosen Praktikum | Universitas Muria Kudus (Juli 2024 – Sep 2025)</h5>
+      <ul>
+        <li>Mengembangkan dan memfasilitasi diskusi teknis praktikum.</li>
+        <li>Membimbing mahasiswa dalam memahami konsep TI & menyelesaikan tugas.</li>
+        <li>Menjadi penghubung antara dosen & mahasiswa.</li>
+        <li>Berhasil berkolaborasi dengan tim asisten dosen dalam mengatasi kendala teknis.</li>
+      </ul>
+      <h5 class="fw-bold mt-4">Anggota Divisi PSDM | UKM FIMA (Juli 2022 – Juni 2023)</h5>
+      <ul>
+        <li>Menginisiasi rekrutmen & orientasi anggota baru.</li>
+        <li>Merancang program internal berupa diskusi rutin & forum pemecahan masalah.</li>
+        <li>Mengelola pelatihan soft skill & mentoring anggota.</li>
+        <li>Meningkatkan sinergi divisi melalui kegiatan internal & komunikasi efektif.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <hr class="w-25 mx-auto">
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- Project 1 -->
+        <div class="col">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <img src="img/beranda seleksi.png" 
+                class="card-img-top" alt="Project 1"
+                data-bs-toggle="modal" data-bs-target="#project1Modal">
+            <div class="card-body">
+              <h5 class="card-title">Sistem Seleksi Calon Peserta Pelatihan</h5>
+              <p class="card-text">
+                Membangun aplikasi berbasis web untuk membantu proses seleksi peserta pelatihan di UPTD BLK Kudus. Sistem ini mengimplementasikan metode pengambilan keputusan multi-kriteria seperti SAW dan kombinasi AHP-SAW untuk menentukan peserta terpilih secara objektif dan terukur.
+              </p>
+              <p class="text-muted">2025</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <img src="img/beranda mobile.jpg" 
+                class="card-img-top" alt="Project 2"
+                data-bs-toggle="modal" data-bs-target="#project2Modal">
+            <div class="card-body">
+              <h5 class="card-title">Aplikasi Penjualan Warmindo (Mobile Based)</h5>
+              <p class="card-text">Mengembangkan sistem penjualan terintegrasi untuk usaha kuliner Warmindo, mencakup perancangan antarmuka pengguna (UI) yang responsif dan logika bisnis transaksi seperti pencatatan pesanan, pengelolaan menu, serta rekap laporan penjualan harian.</p>
+              <p class="text-muted">2024</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col">
+          <div class="card project-card h-100 shadow-sm border-0">
+            <img src="img/beranda jaket.png" 
+                class="card-img-top" alt="Project 3"
+                data-bs-toggle="modal" data-bs-target="#project3Modal">
+            <div class="card-body">
+              <h5 class="card-title">Sistem Kasir Penjualan Jaket (Web-Based)</h5>
+              <p class="card-text">
+                Mengembangkan sistem kasir berbasis web untuk mendukung proses penjualan langsung produk fashion, khususnya jaket. Sistem ini mencakup fitur utama seperti manajemen produk, transaksi penjualan, pencatatan stok, serta cetak struk digital. Antarmuka dirancang agar mudah digunakan oleh kasir dengan alur kerja yang efisien dan responsif.
+              </p>
+              <p class="text-muted">2023</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Project 1 -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/email seleksi.jpg" class="d-block w-100" alt="Project 1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/beranda seleksi.png" class="d-block w-100" alt="Project 1 Extra">
+              </div>
+              <div class="carousel-item">
+                <img src="img/metode seleksi.jpg" class="d-block w-100" alt="Project 1 Extra">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Project 2 -->
+  <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/nota mobile.jpg" class="d-block w-100" alt="Project 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/beranda mobile.jpg" class="d-block w-100" alt="Project 2 Extra">
+              </div>
+              <div class="carousel-item">
+                <img src="img/laporan mobile.jpg" class="d-block w-100" alt="Project 2 Extra">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Project 3 -->
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/kasir jaket.png" class="d-block w-100" alt="Project 3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/beranda jaket.png" class="d-block w-100" alt="Project 3 Extra">
+              </div>
+              <div class="carousel-item">
+                <img src="img/laporan jaket.png" class="d-block w-100" alt="Project 3 Extra">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certifications -->
+  <section id="certifications" class="bg-light">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2><i class="fas fa-certificate"></i> Certifications</h2>
+        <hr class="w-25 mx-auto">
+      </div>
+      <ul class="fs-5">
+        <li>
+          <a href="https://drive.google.com/file/d/1xdFdKoCm9KDB11GH-1yI_YalulvL5835/view?usp=drive_link" target="_blank">
+            IT Help Desk Support Services – UPT Komputer Universitas Muria Kudus (2025)
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1e61vRq6hCBHxgor1Az0MYj7V2bJTQZy5/view?usp=drive_link" target="_blank">
+            Mini Course Intro to Data Analytics – RevoU (2025)
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1FYunN2HSTEfEDlAXA4F_JpbIGGOoLTiy?usp=drive_link" target="_blank">
+            Full-Stack Web Development – LearningX (2024)
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1TmqMOFvBINANF9e-IgIjSsBDtZRKolmw/view?usp=drive_link" target="_blank">
+            Accelerated Competency Training (ACTION) – Trust Training Partners (2022)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2><i class="fas fa-tools"></i> Skills</h2>
+        <hr class="w-25 mx-auto">
+      </div>
+      <h5>Hard Skills</h5>
+      <span class="badge bg-primary skill-badge">Microsoft Office</span>
+      <span class="badge bg-primary skill-badge">Google Sheets & Looker Studio</span>
+      <span class="badge bg-primary skill-badge">Figma & Canva</span>
+      <span class="badge bg-primary skill-badge">UML Design</span>
+      <span class="badge bg-primary skill-badge">Laravel & CodeIgniter</span>
+      <span class="badge bg-primary skill-badge">Flask & Flet</span>
+      <span class="badge bg-primary skill-badge">MySQL</span>
+      <span class="badge bg-primary skill-badge">MongoDB</span>
+      <hr>
+      <h5>Soft Skills</h5>
+      <span class="badge bg-success skill-badge">Komunikasi</span>
+      <span class="badge bg-success skill-badge">Disiplin</span>
+      <span class="badge bg-success skill-badge">Kerja Sama Tim</span>
+      <span class="badge bg-success skill-badge">Berpikir Kritis</span>
+      <span class="badge bg-success skill-badge">Problem Solving</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <hr class="w-25 mx-auto">
+      </div>
+      <div class="text-center fs-5">
+        <p><i class="fas fa-phone"></i> +62 858 6531 7821</p>
+        <p><i class="fas fa-envelope"></i> nawangandrian@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Jawa Tengah, Kudus, Indonesia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 mt-auto">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <div>
+        © <a href="https://github.com/nawangandrian/" target="_blank">Nawang Alan Andrian</a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/nawang_andrian"><i class="fab fa-instagram text-white me-3"></i></a>
+        <a href="https://t.me/Nawang_127"><i class="fab fa-telegram text-white me-3"></i></a>
+        <a href="https://www.tiktok.com/@nawang_andrian"><i class="fab fa-tiktok text-white"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
