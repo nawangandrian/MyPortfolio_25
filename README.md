@@ -13,10 +13,10 @@ Halo! Saya **Nawang**, seorang **mahasiswa Sistem Informasi** di Universitas Mur
 
 ## Teknologi & Keahlian
 
-- **Frontend:** HTML5, CSS3, JavaScript, React
+- **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** PHP (Laravel, CodeIgniter), Flask
 - **Database:** MySQL, PostgreSQL, MongoDB
-- **UI/UX & Design:** Responsive Design, Figma, Adobe XD
+- **UI/UX & Design:** Responsive Design, Figma, Canva
 - **Tools & Lainnya:** Git, GitHub, Microsoft Office (Excel, Word, PPT)
 
 ---
@@ -70,7 +70,7 @@ Mengelola dokumen administrasi dan data peserta pelatihan dengan akurat.
 
 ## Hubungi Saya
 
-- Email: **nawang@example.com**
+- Email: **nawangandrian@gmail.com**
 - LinkedIn: [https://linkedin.com/in/nawang-alan-andrian-65167a2a6](https://linkedin.com/in/nawang-alan-andrian-65167a2a6)
 - GitHub: [https://github.com/nawangandrian](https://github.com/nawangandrian)
 
