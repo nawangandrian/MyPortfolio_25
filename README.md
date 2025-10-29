@@ -1,17 +1,17 @@
-# Nawang Portfolio 🌐
+# Nawang Portfolio
 
 Selamat datang di repositori portofolio saya!  
 Ini adalah versi digital dari portofolio pribadi saya, menampilkan pendidikan, pengalaman, sertifikasi, keahlian, dan proyek yang telah saya kerjakan.
 
 ---
 
-## 💼 Tentang Saya
+## Tentang Saya
 
 Halo! Saya **Nawang**, seorang **mahasiswa Sistem Informasi** di Universitas Muria Kudus (2021-2025) dengan minat kuat di **pengembangan web dan mobile, desain UI/UX, serta manajemen database**. Saya memiliki pengalaman praktis melalui proyek akademik, freelance, dan program sertifikasi, serta memiliki kemampuan teknis dan soft skill yang mendukung pengembangan profesional saya.
 
 ---
 
-## 🛠️ Teknologi & Keahlian
+## Teknologi & Keahlian
 
 - **Frontend:** HTML5, CSS3, JavaScript, React
 - **Backend:** PHP (Laravel, CodeIgniter), Flask
@@ -21,7 +21,7 @@ Halo! Saya **Nawang**, seorang **mahasiswa Sistem Informasi** di Universitas Mur
 
 ---
 
-## 🎓 Pendidikan
+## Pendidikan
 
 **S1 Sistem Informasi** – Universitas Muria Kudus  
 _2021 – 2025 | IPK 3,95_  
@@ -29,14 +29,14 @@ Fokus: pengembangan web & mobile, UML & SDLC, UI/UX, manajemen database.
 
 ---
 
-## 🏆 Sertifikasi
+## Sertifikasi
 
 - Full-Stack Web Development & Certification – LearningX (2024)
 - Accelerated Competency Training & Certification (ACTION) – Trust Training Partners (2022)
 
 ---
 
-## 💼 Pengalaman
+## Pengalaman
 
 **Asisten Dosen Praktikum** – Universitas Muria Kudus  
 _Juli 2024 – September 2025_  
@@ -52,7 +52,7 @@ Mengelola dokumen administrasi dan data peserta pelatihan dengan akurat.
 
 ---
 
-## 🌟 Layanan & Fitur
+## Layanan & Fitur
 
 - Web Development & Frontend Design
 - Mobile App Development
@@ -64,11 +64,11 @@ Mengelola dokumen administrasi dan data peserta pelatihan dengan akurat.
 
 ## 🔗 Demo Portofolio
 
-[🌐 Lihat Portofolio Online](https://nawangandrian.github.io/MyPortfolio_25)
+[Lihat Portofolio Online](https://nawangandrian.github.io/MyPortfolio_25)
 
 ---
 
-## 📫 Hubungi Saya
+## Hubungi Saya
 
 - Email: **nawang@example.com**
 - LinkedIn: [https://linkedin.com/in/nawang-alan-andrian-65167a2a6](https://linkedin.com/in/nawang-alan-andrian-65167a2a6)
