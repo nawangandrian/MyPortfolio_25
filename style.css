@@ -607,6 +607,8 @@ body {
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .resume-left,
@@ -615,8 +617,10 @@ body {
   min-width: 300px;
   max-width: 500px;
   padding: 25px 20px;
+  box-sizing: border-box;
 }
 
+/* Warna dan jarak antarjudul */
 .resume-left h3,
 .resume-right h3,
 .resume-main h3 {
@@ -624,11 +628,39 @@ body {
   margin-top: 20px;
 }
 
-
 .resume-left h3,
 .resume-right h3 {
   color: var(--primary);
   margin-bottom: 20px;
+}
+
+/* === Responsif untuk layar kecil === */
+@media (max-width: 1024px) {
+  .resume-content {
+    gap: 40px; /* Kurangi jarak di layar tablet */
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Resume responsif */
+  .resume-content {
+    flex-direction: column;   /* ubah jadi vertikal */
+    align-items: center;      /* tengah-kan isi */
+    gap: 10px;                /* jarak antar bagian jadi lebih kecil */
+  }
+
+  .resume-left,
+  .resume-right {
+    width: 100%;              /* lebar penuh */
+    max-width: 100%;          /* tidak melebihi layar */
+    padding: 10px 5px;       /* padding lebih kecil di HP */
+  }
+
+  .certifications,
+  .skills-grid {
+    text-align: center;
+  }
 }
 
 .certifications, .skills {
@@ -639,6 +671,16 @@ body {
   margin-left: 20px;       /* Jarak dari tepi kiri */
   padding-left: 0;         /* Hapus padding default */
   line-height: 1.5;        /* Membuat jarak antarbaris lebih nyaman dibaca */
+}
+
+.skill {
+  margin-bottom: 30px;
+}
+
+.skill h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 .skills-grid {
@@ -661,12 +703,6 @@ body {
   background: var(--accent);
   color: white;
   transform: scale(1.05);
-}
-
-.skil {
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 1.1;
 }
 
 .experience-item,
@@ -1005,5 +1041,6 @@ body {
   .resume-content {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 }
