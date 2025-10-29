@@ -37,6 +37,32 @@
 
   <!-- JS -->
   <script src="script.js" defer></script>
+
+  <style>
+    @media (max-width: 1024px) {
+      .header {
+        padding: 18px 40px;
+      }
+      .about-container {
+        text-align: center;
+      }
+      .about-text {
+        text-align: center;
+      }
+      .about-img {
+      display: flex;
+      justify-content: center; /* untuk meratakan horizontal */
+      align-items: center;      /* untuk meratakan vertikal (jika dibutuhkan) */
+      text-align: center;
+    }
+
+    .about-img img {
+      max-width: 100%; /* supaya gambar responsif */
+      height: auto;
+      border-radius: 10px; /* opsional: biar sudut gambar agak lembut */
+    }
+    }
+  </style>
 </head>
 
 <body>
