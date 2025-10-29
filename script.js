@@ -1,6 +1,6 @@
 // ===== Typing Effect =====
 const typingText = document.getElementById("typing-text");
-const words = ["Web & Mobile Developer", "Database Designer", "System Analyst"];
+const words = ["Web & Mobile Developer ", "Database Designer ", "System Analyst "];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

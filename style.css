@@ -967,12 +967,23 @@ body {
     padding: 18px 40px;
   }
   .about-container {
-    flex-direction: column;
     text-align: center;
   }
   .about-text {
     text-align: center;
   }
+  .about-img {
+  display: flex;
+  justify-content: center; /* untuk meratakan horizontal */
+  align-items: center;      /* untuk meratakan vertikal (jika dibutuhkan) */
+  text-align: center;
+}
+
+.about-img img {
+  max-width: 100%; /* supaya gambar responsif */
+  height: auto;
+  border-radius: 10px; /* opsional: biar sudut gambar agak lembut */
+}
 }
 
 @media (max-width: 768px) {
