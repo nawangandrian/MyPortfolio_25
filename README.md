@@ -1,4 +1,4 @@
-# Nawang Portfolio
+# Nawang Alan Andrian Portfolio
 
 Selamat datang di repositori portofolio saya!  
 Ini adalah versi digital dari portofolio pribadi saya, menampilkan pendidikan, pengalaman, sertifikasi, keahlian, dan proyek yang telah saya kerjakan.
@@ -7,7 +7,7 @@ Ini adalah versi digital dari portofolio pribadi saya, menampilkan pendidikan, p
 
 ## Tentang Saya
 
-Halo! Saya **Nawang**, seorang **mahasiswa Sistem Informasi** di Universitas Muria Kudus (2021-2025) dengan minat kuat di **pengembangan web dan mobile, desain UI/UX, serta manajemen database**. Saya memiliki pengalaman praktis melalui proyek akademik, freelance, dan program sertifikasi, serta memiliki kemampuan teknis dan soft skill yang mendukung pengembangan profesional saya.
+Halo! Saya **Nawang Alan Andrian**, seorang **mahasiswa Sistem Informasi** di Universitas Muria Kudus (2021-2025) dengan minat kuat di **pengembangan web dan mobile, desain UI/UX, serta manajemen database**. Saya memiliki pengalaman praktis melalui proyek akademik, freelance, dan program sertifikasi, serta memiliki kemampuan teknis dan soft skill yang mendukung pengembangan profesional saya.
 
 ---
 
