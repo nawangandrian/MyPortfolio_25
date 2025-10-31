@@ -17,14 +17,14 @@ Halo! Saya **Nawang Alan Andrian**, seorang **mahasiswa Sistem Informasi** di Un
 - **Backend:** PHP (Laravel, CodeIgniter), Flask
 - **Database:** MySQL, PostgreSQL, MongoDB
 - **UI/UX & Design:** Responsive Design, Figma, Canva
-- **Tools & Lainnya:** Git, GitHub, Microsoft Office (Excel, Word, PPT)
+- **Tools & Lainnya:** Git, GitHub, Microsoft Office
 
 ---
 
 ## Pendidikan
 
 **S1 Sistem Informasi** – Universitas Muria Kudus  
-_2021 – 2025 | IPK 3,95_  
+_2021 – 2025_  
 Fokus: pengembangan web & mobile, UML & SDLC, UI/UX, manajemen database.
 
 ---
