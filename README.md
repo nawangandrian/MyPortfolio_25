@@ -64,6 +64,8 @@ Mengelola dokumen administrasi dan data peserta pelatihan dengan akurat.
 
 ## 🔗 Demo Portofolio
 
+Silahkan login dengan Username: admin & Email: admin@gmail.com
+
 [Lihat Portofolio Online](https://nawangandrian.github.io/MyPortfolio_25)
 
 ---
