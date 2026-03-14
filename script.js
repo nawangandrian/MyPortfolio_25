@@ -1,6 +1,10 @@
 // ===== Typing Effect =====
 const typingText = document.getElementById("typing-text");
-const words = ["Web & Mobile Developer ", "Database Designer ", "System Analyst "];
+const words = [
+  "Full Stack Developer ",
+  "Database Designer ",
+  "System Analyst ",
+];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -13,16 +17,14 @@ function typeEffect() {
 
   typingText.textContent = currentText;
 
-  // Kecepatan mengetik
   let typingSpeed = isDeleting ? 60 : 120;
 
-  // Jika kata selesai diketik
   if (!isDeleting && charIndex === currentWord.length) {
     isDeleting = true;
-    typingSpeed = 1200; // jeda sebelum hapus
+    typingSpeed = 1200;
   } else if (isDeleting && charIndex === 0) {
     isDeleting = false;
-    wordIndex = (wordIndex + 1) % words.length; // lanjut ke kata berikutnya
+    wordIndex = (wordIndex + 1) % words.length;
     typingSpeed = 400;
   }
 
@@ -51,66 +53,49 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-// Toggle menu on mobile
-const toggle = document.getElementById('menu-toggle');
-const navbar = document.getElementById('navbar');
 
-toggle.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-  toggle.classList.toggle('open');
+// ===== Toggle menu on mobile =====
+const toggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+toggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+  toggle.classList.toggle("open");
 });
 
-// ===== Smooth Scroll =====
-const navLinksSmooth = document.querySelectorAll(".navbar a[href^='#']");
+// ===== Smooth Scroll (Navbar + Footer logo) =====
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollTargets = document.querySelectorAll("a[href^='#']");
 
-navLinksSmooth.forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault(); // hentikan default jump
-    const targetId = this.getAttribute("href").substring(1); // hapus '#'
-    const targetSection = document.getElementById(targetId);
+  scrollTargets.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
 
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop - 80, // jarak dari navbar
-        behavior: "smooth" // scroll halus
-      });
-    }
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
 
-    // tutup menu mobile jika terbuka
-    if (navbar.classList.contains("active")) {
-      navbar.classList.remove("active");
-      toggle.classList.remove("open");
-    }
+      // Close mobile menu if open
+      const navbar = document.getElementById("navbar");
+      const toggle = document.getElementById("menu-toggle");
+      if (navbar && navbar.classList.contains("active")) {
+        navbar.classList.remove("active");
+        toggle.classList.remove("open");
+      }
+    });
   });
-});
-// ===== Smooth Scroll untuk Navbar dan Footer =====
-const scrollLinks = document.querySelectorAll("a[href^='#'], .footer-logo");
 
-scrollLinks.forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
-
-    let targetId = this.getAttribute("href");
-    
-    // Jika klik logo footer
-    if (this.classList.contains("footer-logo")) {
-      targetId = "#home"; // arahkan logo ke home
-    }
-
-    const targetSection = document.querySelector(targetId);
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop - 80, // sesuaikan jarak navbar
-        behavior: "smooth"
-      });
-    }
-
-    // Tutup menu mobile jika terbuka
-    const navbar = document.getElementById("navbar");
-    const toggle = document.getElementById("menu-toggle");
-    if (navbar && navbar.classList.contains("active")) {
-      navbar.classList.remove("active");
-      toggle.classList.remove("open");
-    }
-  });
+  // Footer logo → back to top
+  const footerLogo = document.querySelector(".footer-logo");
+  if (footerLogo) {
+    footerLogo.style.cursor = "pointer";
+    footerLogo.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 });
