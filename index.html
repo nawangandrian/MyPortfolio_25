@@ -83,7 +83,9 @@
           ></span>
         </p>
         <h1 class="hero-name">Nawang Alan Andrian</h1>
-        <p class="hero-title">Full Stack Developer | DB Designer | System Analyst</p>
+        <p class="hero-title">
+          Full Stack Developer | DB Designer | System Analyst
+        </p>
         <p class="hero-description">
           Lulusan S1 Sistem Informasi Universitas Muria Kudus dengan minat dan
           keahlian dalam pengembangan aplikasi web dan mobile menggunakan
@@ -227,10 +229,9 @@
                       secara real-time.
                     </p>
                     <div class="project-tech">
-                      <span>Laravel</span><span>PHP</span
-                      ><span>MySQL</span><span>Bootstrap</span
-                      ><span>Tailwind</span><span>WhatsApp API</span
-                      >
+                      <span>Laravel</span><span>PHP</span><span>MySQL</span
+                      ><span>Bootstrap</span><span>Tailwind</span
+                      ><span>WhatsApp API</span>
                     </div>
                     <div class="project-links">
                       <span class="project-link no-link"
@@ -1035,7 +1036,14 @@
             ><i class="fab fa-whatsapp"></i
           ></a>
         </div>
-        <p class="footer-copy">&copy; 2025 NawangDev All Rights Reserved.</p>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> NawangDev All Rights Reserved.
+        </p>
+
+        <script>
+          document.getElementById("year").textContent =
+            new Date().getFullYear();
+        </script>
       </div>
     </footer>
 
