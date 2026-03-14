@@ -1,602 +1,1128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nawang Alan Andrian | Portfolio</title>
-  <link rel="icon" href="img/favicon.png" type="image/png" sizes="96x96">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nawang Alan Andrian | Portfolio</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="96x96" />
+    <meta
+      name="description"
+      content="Portfolio Nawang Alan Andrian — Web & Mobile Developer, Database Designer, dan System Analyst."
+    />
+    <meta
+      name="keywords"
+      content="Nawang Alan Andrian, Portfolio, Web Developer, Mobile Developer, System Analyst, Database Designer, UI/UX, Laravel, Flask, Flet"
+    />
+    <meta name="author" content="Nawang Alan Andrian" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Nawang Alan Andrian | Web & Mobile Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio Nawang Alan Andrian — Web & Mobile Developer."
+    />
+    <meta
+      property="og:image"
+      content="https://nawangandrian.github.io/MyPortfolio_25/img/portfolio-previeww.png"
+    />
+    <meta
+      property="og:url"
+      content="https://nawangandrian.github.io/MyPortfolio_25"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Portfolio Nawang Alan Andrian" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nawang Alan Andrian | Portfolio" />
+    <meta
+      name="twitter:image"
+      content="https://nawangandrian.github.io/MyPortfolio_25/img/portfolio-preview.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <div class="logo"><span>Nawang</span>Dev</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav class="navbar" id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!-- ===== SEO & Metadata ===== -->
-
-  <!-- Meta dasar untuk SEO -->
-  <meta name="description" content="Portfolio Nawang Alan Andrian — Web & Mobile Developer, Database Designer, dan System Analyst. Jelajahi proyek, keterampilan, dan kontak profesional." />
-  <meta name="keywords" content="Nawang Alan Andrian, Portfolio, Web Developer, Mobile Developer, System Analyst, Database Designer, UI/UX, Laravel, Flask, Flet" />
-  <meta name="author" content="Nawang Alan Andrian" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
-  <meta property="og:title" content="Nawang Alan Andrian | Web & Mobile Developer Portfolio" />
-  <meta property="og:description" content="Lihat portfolio Nawang Alan Andrian — Web & Mobile Developer yang berfokus pada Laravel, Flask, Flet, dan desain perancangan sistem berbasis UML & SDLC." />
-  <meta property="og:image" content="https://nawangandrian.github.io/MyPortfolio_25/img/portfolio-previeww.png" />
-  <meta property="og:url" content="https://nawangandrian.github.io/MyPortfolio_25" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="id_ID" />
-
-  <!-- WhatsApp Preview (menggunakan tag Open Graph yang sama) -->
-  <!-- Tambahkan meta tambahan untuk pengalaman WhatsApp -->
-  <meta property="og:site_name" content="Portfolio Nawang Alan Andrian" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Nawang Alan Andrian | Portfolio" />
-  <meta name="twitter:description" content="Portfolio Nawang Alan Andrian — Web & Mobile Developer & System Analyst." />
-  <meta name="twitter:image" content="https://nawangandrian.github.io/MyPortfolio_25/img/portfolio-previeww.png" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- JS -->
-  <script src="script.js" defer></script>
-
-  <style>
-    @media (max-width: 1024px) {
-      .header {
-        padding: 18px 40px;
-      }
-      .about-container {
-        text-align: center;
-        padding: 30px;
-      }
-      .about-text {
-        text-align: center;
-      }
-      .about-img {
-      display: flex;
-      justify-content: center; 
-      align-items: center;      
-      text-align: center;
-    }
-
-    .about-img img {
-      max-width: 100%; /* supaya gambar responsif */
-      height: auto;
-      border-radius: 10px; /* opsional: biar sudut gambar agak lembut */
-    }
-    }
-  </style>
-</head>
-
-<body>
-  <!-- ===== Header ===== -->
-<header class="header">
-  <div class="logo"><span>Nawang</span>Dev</div>
-
-  <!-- Hamburger Icon -->
-  <div class="menu-toggle" id="menu-toggle">
-    ☰
-  </div>
-
-  <nav class="navbar" id="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-  <!-- ===== Hero Section ===== -->
-  <section class="hero" id="home">
-    <div class="hero-left">
-      <img src="img/NAW127.png" alt="Profile" class="profile-img">
-    </div>
-
-    <div class="hero-right">
-      <p class="intro">Hi, I'm <span class="typing-container"><span id="typing-text"></span><span class="cursor"></span></span></p>
-      <h1 class="hero-name">Nawang Alan Andrian</h1>
-      <p class="hero-title">Web & Mobile Developer | Database Designer | System Analyst</p>
-      <p class="hero-description">
-        Lulusan S1 Sistem Informasi Universitas Muria Kudus dengan minat dan keahlian dalam pengembangan aplikasi web dan mobile menggunakan Laravel, CodeIgniter, Flask, dan Flet.
-        Berpengalaman dalam perancangan sistem berbasis UML & SDLC, serta manajemen database (MySQL, PostgreSQL, MongoDB).
-      </p>
-
-      <div class="hero-buttons">
-        <a href="https://drive.google.com/file/d/1oJD7q-hahG_OpXcZT0h6td7A86tfWqZQ/view?usp=drive_link" target="_blank" class="btn primary">Download CV</a>
-        <a href="mailto:nawangandrian@gmail.com" class="btn outline">Contact</a>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <img src="img/NAW127.png" alt="Profile" class="profile-img" />
       </div>
-
-      <div class="social-linkss">
-        <a href="https://linkedin.com/in/nawang-alan-andrian-65167a2a6/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/nawangandrian" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://instagram.com/nawang_andrian" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/6285865317821" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== About Section ===== -->
-  <section id="about" class="about section">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-container">
-      <div class="about-text">
-        <h3>Membangun Solusi Digital yang Bermakna</h3>
-        <p>
-          Saya adalah <strong>seorang pengembang web dan mobile</strong> dengan ketertarikan tinggi pada teknologi dan desain antarmuka yang fungsional. 
-          Berawal dari rasa ingin tahu terhadap dunia digital, saya mengembangkan keahlian dalam menggabungkan logika pemrograman dengan kreativitas desain untuk menciptakan pengalaman pengguna yang menarik dan efisien.
+      <div class="hero-right">
+        <p class="intro">
+          Hi, I'm
+          <span class="typing-container"
+            ><span id="typing-text"></span><span class="cursor"></span
+          ></span>
         </p>
-        <p>
-          Selama menempuh studi di Universitas Muria Kudus, saya aktif sebagai Asisten Dosen Praktikum di bidang pengembangan aplikasi, 
-          yang meningkatkan kemampuan komunikasi dan kolaborasi tim saya. 
-          Saya memiliki pengalaman dalam merancang sistem menggunakan <strong>UML dan SDLC, mengelola basis data relasional, serta menerapkan prinsip normalisasi untuk efisiensi data</strong>. 
-          Selain itu, saya juga tertarik pada desain UI/UX yang fungsional, interaktif, dan berfokus pada <strong>pengalaman pengguna, dengan tujuan menghadirkan solusi digital yang efisien dan berdampak.</strong>
+        <h1 class="hero-name">Nawang Alan Andrian</h1>
+        <p class="hero-title">Full Stack Developer | DB Designer | System Analyst</p>
+        <p class="hero-description">
+          Lulusan S1 Sistem Informasi Universitas Muria Kudus dengan minat dan
+          keahlian dalam pengembangan aplikasi web dan mobile menggunakan
+          Laravel, CodeIgniter, Flask, dan Flet. Berpengalaman dalam perancangan
+          sistem berbasis UML &amp; SDLC, serta manajemen database (MySQL,
+          PostgreSQL, MongoDB).
         </p>
-        <p>
-          Saya percaya bahwa teknologi bukan hanya soal kode, tetapi juga tentang bagaimana menghadirkan solusi yang berdampak. 
-          Karena itu, saya terus belajar, berinovasi, dan berusaha menghadirkan aplikasi yang bermanfaat bagi pengguna.
-        </p>
-      </div>
-      <div class="about-img">
-        <img src="img/NAW127.png" alt="Profile" />
-      </div>
-    </div>
-  </section>
-
-<section id="projects" class="section">
-    <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid slide-in-up">
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/beranda jaket.png" alt="Website Penjualan Jaket">
-                </div>
-                <div class="project-content">
-                    <h3>Website Penjualan Jaket</h3>
-                    <p>Sistem website untuk penjualan jaket, dengan fitur kasir online, manajemen produk, dan laporan penjualan.</p>
-                    <div class="project-tech">
-                        <span>Framework CodeIgniter4</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/nawangandrian/best-jacket" target="_blank" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/beranda seleksi.png" alt="Web Seleksi Calon Peserta Pelatihan">
-                </div>
-                <div class="project-content">
-                    <h3>Web Seleksi Calon Peserta Pelatihan</h3>
-                    <p>Sistem web untuk seleksi calon peserta pelatihan, dengan fitur manajemen data peserta, proses seleksi, dan laporan hasil seleksi.</p>
-                    <div class="project-tech">
-                        <span>Framework CodeIgniter4</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/nawangandrian/sistem-seleksi" target="_blank" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                  <img src="img/beranda perpus.png" alt="Sistem Perpustakaan Digital">
-                </div>
-                <div class="project-content">
-                  <h3>Sistem Perpustakaan Digital</h3>
-                  <p>
-                    Aplikasi web CRUD perpustakaan ini berbasis <b>CodeIgniter 4</b> yang digunakan untuk memanajemen data buku digital.
-                  </p>
-                  <div class="project-tech">
-                    <span>Framework CodeIgniter4</span>
-                    <span>PHP</span>
-                    <span>MySQL</span>
-                    <span>Bootstrap</span>
-                  </div>
-                  <div class="project-links">
-                    <a href="https://github.com/nawangandrian/sistem-perpustakaan" target="_blank" class="project-link">GitHub</a>
-                  </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/beranda mobile.jpg" alt="Desktop Mobile Sistem Penjualan Kasir Warmindo">
-                </div>
-                <div class="project-content">
-                    <h3>Sistem Penjualan Kasir Warmindo</h3>
-                    <p>Aplikasi desktop dan mobile untuk sistem penjualan kasir, termasuk manajemen menu, transaksi, dan laporan penjualan.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Flet</span>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/nawangandrian/project_warmindo" target="_blank" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/beranda siswa.png" alt="Sistem Manajemen Data Siswa CRUD">
-                </div>
-                <div class="project-content">
-                    <h3>Sistem Manajemen Data Siswa</h3>
-                    <p>Sistem CRUD untuk manajemen data siswa, termasuk input, edit, hapus, dan pencarian data siswa.</p>
-                    <div class="project-tech">
-                        <span>Framework Laravel</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>TailwindCSS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/nawangandrian/manajemen-siswa" target="_blank" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/beranda rental.png" alt="Dashboard Sistem Rental Barang">
-                </div>
-                <div class="project-content">
-                    <h3>Rental Management System</h3>
-                    <p>
-                        Aplikasi web rental ini dilengkapi dengan dashboard interaktif, manajemen pelanggan, item, dan transaksi rental.
-                    </p>
-                    <div class="project-tech">
-                        <span>Framework Laravel</span>
-                        <span>PHP</span>
-                        <span>Livewire</span>
-                        <span>Tailwind CSS</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/nawangandrian/rental-livewire" target="_blank" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-              <div class="project-image">
-                <img src="img/beranda user.png" alt="React User Management System">
-              </div>
-
-              <div class="project-content">
-                <h3>React User Management System</h3>
-                <p>
-                  Aplikasi manajemen data pengguna berbasis ReactJS, Axios, dan backend JSON yang terhubung dengan REST API (MockAPI).
-                </p>
-
-                <div class="project-tech">
-                  <span>ReactJS</span>
-                  <span>Javascript</span>
-                  <span>Axios</span>
-                  <span>JSON Server / MockAPI</span>
-                  <span>Vite</span>
-                </div>
-
-                <div class="project-links">
-                  <a href="https://github.com/nawangandrian/react-user-management" target="_blank" class="project-link">GitHub</a>
-                  <a href="https://react-user-management-flame.vercel.app/" target="_blank" class="project-link live">Live Demo</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/beranda blog.png" alt="Dashboard Website Blog Berita Teknologi">
-                </div>
-                <div class="project-content">
-                    <h3>News NawDev</h3>
-                    <p>
-                        Website blog berita teknologi ini dilengkapi dengan Home, About, Contact, Login, dan Dashboard untuk manajemen konten.
-                    </p>
-                    <div class="project-tech">
-                        <span>Next.js</span>
-                        <span>TypeScript</span>
-                        <span>Tailwind CSS</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/nawangandrian/next-blog" target="_blank" class="project-link">GitHub</a>
-                        <a href="https://next-blog-nawang.vercel.app/" target="_blank" class="project-link live">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/beranda profil.png" alt="Sistem Web Profil Desa KKN">
-                </div>
-                <div class="project-content">
-                    <h3>Sistem Web Profil Desa</h3>
-                    <p>Sistem web untuk menampilkan profil desa, yang merupakan hasil project selama KKN, dan informasi terkait masyarakat desa Balerejo.</p>
-                    <div class="project-tech">
-                        <span>Framework Flask</span>
-                        <span>Python</span>
-                        <span>MongoDB</span>
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/nawangandrian/profil_desa" target="_blank" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
+        <div class="hero-buttons">
+          <a
+            href="https://drive.google.com/file/d/1oJD7q-hahG_OpXcZT0h6td7A86tfWqZQ/view?usp=drive_link"
+            target="_blank"
+            class="btn primary"
+            >Download CV</a
+          >
+          <a href="mailto:nawangandrian@gmail.com" class="btn outline"
+            >Contact</a
+          >
         </div>
-    </div>
-</section>
+        <div class="social-linkss">
+          <a
+            href="https://linkedin.com/in/nawang-alan-andrian/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/nawangandrian"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://instagram.com/nawang_andrian"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/6285865317821"
+            target="_blank"
+            aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </section>
 
-<section id="resume" class="section">
-  <div class="container">
-    <h2 class="section-title">Resume</h2>
-
-    <!-- Resume Wrapper -->
-    <div class="resume-content">
-      
-      <!-- Left Column: Education -->
-      <div class="resume-left">
-        <h3>Education</h3>
-        <div class="education-item">
-          <h4>Sarjana Sistem Informasi (S1)</h4>
-          <p class="university">Universitas Muria Kudus</p>
-          <p class="date">2021 - 2025</p>
-          <p >
-            Lulusan S1 Sistem Informasi dengan IPK 3,95. Fokus studi pada pengembangan aplikasi web dan mobile, 
-            perancangan sistem menggunakan UML & SDLC, desain UI/UX, serta manajemen basis data (RDBMS & normalisasi tabel).
-          </p><p>Proyek akhir: <strong>Sistem Seleksi Calon Peserta Pelatihan Berbasis Web di UPTD BLK Kudus</strong> 
-            menggunakan metode <strong>SAW dan kombinasi AHP-SAW</strong>.
+    <!-- ===== About ===== -->
+    <section id="about" class="about section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="img/NAW127.png" alt="Profile" />
+        </div>
+        <div class="about-text">
+          <h3>Building Digital Solutions That Matter</h3>
+          <p class="about-tagline">
+            <span class="tag-badge"
+              ><i class="fa fa-code"></i> Full Stack Developer</span
+            >
+            <span class="tag-badge"
+              ><i class="fa fa-database"></i> DB Designer</span
+            >
+            <span class="tag-badge"
+              ><i class="fa fa-diagram-project"></i> System Analyst</span
+            >
           </p>
-        </div>
-        <h3>Soft Skill</h3>
-        <ul class="certifications">
-          <li>Komunikasi (Advance)</li>
-          <li>Jujur, Disiplin, dan Bertanggung Jawab (Expert)</li>
-          <li>Kerja Sama Tim (Expert)</li>
-          <li>Berpikir Kritis (Advance)</li>
-          <li>Pemecahan Masalah / Problem Solving (Advance)</li>
-        </ul>
-        
-      </div>
-
-      <!-- Right Column: Certifications & Skills -->
-      <div class="resume-right">
-        <h3>Certifications & Training</h3>
-        <ul class="certifications">
-          <li><strong>Bootcamp Kickstart Your Web Journey: From Development Lifecycle to Coding Basic</strong> – Aksademy (2025)</li>
-          <li><strong>Coding Camp: Intro to Software Engineering</strong> – RevoU (2025)</li>
-          <li><strong>Online Course: Introduction to ExpressJS</strong> – Simplilearn | SkillUp (2025)</li>
-          <li><strong>Online Course: Introduction to SQL</strong> – Simplilearn | SkillUp (2025)</li>
-          <li><strong>IT Help Desk Support Services</strong> – UPT Komputer Universitas Muria Kudus (2025)</li>
-          <li><strong>Mini Course: Intro to Data Analytics</strong> – RevoU (2025)</li>
-          <li><strong>Full-Stack Web Development Course & Certification</strong> – LearningX / PT Global Investment Institusi (2024)</li>
-          <li><strong>Accelerated Competency Training and Certification (ACTION)</strong> – Trust Training Partners (2022)</li>
-        </ul>
-
-        <div class="skill">
-            <h3>Skill & Technology</h3>
-            <div class="skills-grid">
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Laravel</span>
-              <span class="skill-tag">CodeIgniter 4</span>
-              <span class="skill-tag">Flask</span>
-              <span class="skill-tag">React/NextJs</span>
-              <span class="skill-tag">Flet</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">UML (StarUML, Visio, Draw.io)</span>
-              <span class="skill-tag">SDLC</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">Postman</span>
-              <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Canva</span>
-              <span class="skill-tag">Google Sheets</span>
-              <span class="skill-tag">Looker Studio</span>
-              <span class="skill-tag">Microsoft Office</span>
+          <p>
+            Saya adalah pengembang web dan mobile lulusan
+            <strong>S1 Sistem Informasi Universitas Muria Kudus</strong> (IPK
+            3.95) dengan pengalaman nyata di dunia industri — mulai dari magang
+            di <strong>BBPOM Semarang</strong> hingga aktif sebagai
+            <strong>IT Programmer di UIN Sunan Kudus</strong>.
+          </p>
+          <p>
+            Keahlian saya mencakup full-stack development (Laravel, CodeIgniter,
+            Flask, React/Next.js), perancangan sistem berbasis
+            <strong>UML &amp; SDLC</strong>, dan manajemen database relasional
+            maupun NoSQL. Saya percaya kode yang baik bukan hanya yang berjalan
+            — tapi yang memberi dampak nyata bagi penggunanya.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">11+</span
+              ><span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8+</span
+              ><span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span
+              ><span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2</span
+              ><span class="stat-label">Work Experience</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Resume Main (Experience Centered Below) -->
-    <div class="resume-main">
-      <h3>Experience</h3>
-      <div class="experience-item">
-        <h4>Asisten Dosen Praktikum</h4>
-        <p class="company">Program Studi Sistem Informasi, Universitas Muria Kudus</p>
-        <p class="date">Juli 2024 – September 2025</p>
-        <p>
-          Mengembangkan dan memfasilitasi sesi praktikum untuk membantu mahasiswa memahami konsep dan 
-          penerapan teknologi informasi. Bertanggung jawab dalam komunikasi antara dosen dan mahasiswa, 
-          serta bekerja sama dengan tim asisten dosen lainnya untuk memastikan kegiatan praktikum berjalan lancar.
-        </p>
-      </div><br>
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="projects-section-header">
+          <div class="projects-eyebrow">Portfolio</div>
+          <h2 class="section-title" style="margin-bottom: 8px">My Projects</h2>
+          <p style="color: #6b7280; font-size: 0.85rem; margin: 0 0 40px">
+            Geser untuk menjelajahi semua proyek
+          </p>
+        </div>
 
-      <div class="experience-item">
-        <h4>Kuliah Kerja Nyata (KKN) – Pengembangan Web Profil Desa</h4>
-        <p class="company">Universitas Muria Kudus | Desa Balerejo</p>
-        <p class="date">Agustus 2025 – September 2025</p>
-        <p>
-          Berperan dalam tim KKN yang mengusung tema teknologi dengan fokus pada pengembangan 
-          <strong>web profil desa</strong> untuk memperkenalkan potensi dan informasi desa kepada masyarakat luas. 
-          Website dikembangkan menggunakan <strong>Flask</strong> sebagai backend, <strong>MongoDB</strong> sebagai basis data, 
-          serta desain <strong>responsif</strong> agar mudah diakses dari berbagai perangkat. 
-          Fitur yang diimplementasikan mencakup informasi administratif, potensi sumber daya alam, kegiatan masyarakat, 
-          serta layanan publik. Proyek ini meningkatkan literasi digital desa dan memperkuat branding komunitas lokal secara online.
-        </p>
-      </div><br>
+        <div class="carousel-outer">
+          <button
+            class="carousel-btn prev"
+            id="carouselPrev"
+            aria-label="Previous"
+          >
+            <i class="fa fa-chevron-left"></i>
+          </button>
 
-      <div class="experience-item">
-        <h4>Full-Stack Web Development – Independent Study (MSIB Batch 6)</h4>
-        <p class="company">PT Global Investment Institusi</p>
-        <p class="date">Februari 2024 – Juli 2024</p>
-        <p>
-          Mengikuti program studi independen bersertifikat dalam pengembangan aplikasi full-stack berbasis web 
-          menggunakan HTML, CSS, JavaScript, Python (Flask), dan MongoDB. 
-          Mengembangkan proyek nyata mulai dari desain UI/UX, pembuatan API, hingga manajemen database dan deployment.
-        </p>
-      </div><br>
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack">
+              <!-- Slide 1 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda simoncer.png"
+                      alt="SIMONCER BBPOM Semarang"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>SIMONCER — BBPOM Semarang</h3>
+                    <p>
+                      Sistem Monitoring Evaluasi CAPA Terintegrasi untuk Balai
+                      Besar POM di Semarang. Platform digital untuk konsultasi
+                      dan pemantauan tindak lanjut hasil pemeriksaan (CAPA)
+                      secara real-time.
+                    </p>
+                    <div class="project-tech">
+                      <span>Laravel</span><span>PHP</span
+                      ><span>MySQL</span><span>Bootstrap</span
+                      ><span>Tailwind</span><span>WhatsApp API</span
+                      >
+                    </div>
+                    <div class="project-links">
+                      <span class="project-link no-link"
+                        ><i class="fa fa-lock"></i> Internal System</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="img/beranda pmi.png" alt="SP3 PMI Kudus" />
+                  </div>
+                  <div class="project-content">
+                    <h3>SP3 — Prediksi Pendonor PMI Kudus</h3>
+                    <p>
+                      Sistem Prediksi Pendonor Potensial berbasis AI (Random
+                      Forest) untuk PMI Kabupaten Kudus. Memprediksi
+                      probabilitas pendonor kembali berdonor dengan akurasi
+                      90–96%.
+                    </p>
+                    <div class="project-tech">
+                      <span>CodeIgniter 4</span><span>Python</span
+                      ><span>Random Forest</span><span>MySQL</span
+                      ><span>Chart.js</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/pmi-project"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="experience-item">
-        <h4>Praktik Kerja Lapangan (PKL) – Staf Administrasi</h4>
-        <p class="company">UPTD Balai Latihan Kerja (BLK) Kudus</p>
-        <p class="date">Januari 2024 – Februari 2024</p>
-        <p>
-          Membantu pengelolaan dokumen administrasi pelatihan, termasuk pendaftaran peserta dan penyusunan laporan. 
-          Menggunakan Microsoft Office (terutama Excel & Word) dalam pengolahan data pelatihan serta memahami proses administrasi publik yang efisien dan akurat.
-        </p>
-      </div><br>
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda seleksi.png"
+                      alt="Web Seleksi Calon Peserta Pelatihan"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Web Seleksi Calon Peserta Pelatihan</h3>
+                    <p>
+                      Sistem web untuk seleksi calon peserta pelatihan BLK Kudus
+                      menggunakan metode AHP-SAW, dengan notifikasi email
+                      otomatis dan laporan hasil seleksi.
+                    </p>
+                    <div class="project-tech">
+                      <span>CodeIgniter 4</span><span>PHP</span
+                      ><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/sistem-seleksi"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda jaket.png"
+                      alt="Website Penjualan Jaket"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Website Penjualan Jaket</h3>
+                    <p>
+                      Sistem website untuk penjualan jaket, dengan fitur kasir
+                      online, manajemen produk, dan laporan penjualan.
+                    </p>
+                    <div class="project-tech">
+                      <span>CodeIgniter 4</span><span>PHP</span
+                      ><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/best-jacket"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="experience-item">
-        <h4>Anggota Divisi PSDM (Pengembangan Sumber Daya Manusia)</h4>
-        <p class="company">UKM FIMA – Forum Ilmiah Mahasiswa, Universitas Muria Kudus</p>
-        <p class="date">Juli 2022 – Juni 2023</p>
-        <p>
-          Berperan dalam proses rekrutmen anggota baru, merancang program pengembangan diri, dan mengorganisasi 
-          kegiatan internal yang memperkuat kerja sama tim. Fokus pada peningkatan soft skill, komunikasi efektif, 
-          dan sinergi antaranggota.
-        </p>
+              <!-- Slide 3 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda perpus.png"
+                      alt="Sistem Perpustakaan Digital"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Sistem Perpustakaan Digital</h3>
+                    <p>
+                      Aplikasi web CRUD perpustakaan berbasis CodeIgniter 4
+                      untuk manajemen data buku digital, dilengkapi fitur
+                      pencarian dan kategorisasi koleksi.
+                    </p>
+                    <div class="project-tech">
+                      <span>CodeIgniter 4</span><span>PHP</span
+                      ><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/sistem-perpustakaan"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda mobile.jpg"
+                      alt="Sistem Penjualan Kasir Warmindo"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Sistem Penjualan Kasir Warmindo</h3>
+                    <p>
+                      Aplikasi desktop dan mobile untuk sistem penjualan kasir,
+                      termasuk manajemen menu, transaksi, dan laporan penjualan.
+                    </p>
+                    <div class="project-tech">
+                      <span>Python</span><span>Flet</span><span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/project_warmindo"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda siswa.png"
+                      alt="Sistem Manajemen Data Siswa"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Sistem Manajemen Data Siswa</h3>
+                    <p>
+                      Sistem CRUD untuk manajemen data siswa, termasuk input,
+                      edit, hapus, dan pencarian data siswa.
+                    </p>
+                    <div class="project-tech">
+                      <span>Laravel</span><span>PHP</span><span>MySQL</span
+                      ><span>TailwindCSS</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/manajemen-siswa"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda rental.png"
+                      alt="Rental Management System"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Rental Management System</h3>
+                    <p>
+                      Aplikasi web rental dengan dashboard interaktif, manajemen
+                      pelanggan, item, dan transaksi rental.
+                    </p>
+                    <div class="project-tech">
+                      <span>Laravel</span><span>Livewire</span
+                      ><span>Tailwind CSS</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/rental-livewire"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda user.png"
+                      alt="React User Management System"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>React User Management System</h3>
+                    <p>
+                      Aplikasi manajemen data pengguna berbasis ReactJS, Axios,
+                      dan REST API (MockAPI).
+                    </p>
+                    <div class="project-tech">
+                      <span>ReactJS</span><span>Axios</span
+                      ><span>JSON Server</span><span>Vite</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/react-user-management"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                      <a
+                        href="https://react-user-management-flame.vercel.app/"
+                        target="_blank"
+                        class="project-link live"
+                        >Live Demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="img/beranda blog.png" alt="News NawDev" />
+                  </div>
+                  <div class="project-content">
+                    <h3>News NawDev</h3>
+                    <p>
+                      Website blog berita teknologi dengan Home, About, Contact,
+                      Login, dan Dashboard manajemen konten.
+                    </p>
+                    <div class="project-tech">
+                      <span>Next.js</span><span>TypeScript</span
+                      ><span>Tailwind CSS</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/next-blog"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                      <a
+                        href="https://next-blog-nawang.vercel.app/"
+                        target="_blank"
+                        class="project-link live"
+                        >Live Demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image">
+                    <img
+                      src="img/beranda profil.png"
+                      alt="Sistem Web Profil Desa"
+                    />
+                  </div>
+                  <div class="project-content">
+                    <h3>Sistem Web Profil Desa</h3>
+                    <p>
+                      Sistem web untuk menampilkan profil desa Balerejo — hasil
+                      project KKN bersama tim pengembang mahasiswa.
+                    </p>
+                    <div class="project-tech">
+                      <span>Flask</span><span>Python</span><span>MongoDB</span
+                      ><span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                      <a
+                        href="https://github.com/nawangandrian/profil_desa"
+                        target="_blank"
+                        class="project-link"
+                        >GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card project-card--placeholder">
+                  <div class="project-placeholder-inner">
+                    <i class="fa fa-code"></i>
+                    <p>More projects coming soon...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /carousel-track -->
+          </div>
+          <!-- /carousel-viewport -->
+
+          <button class="carousel-btn next" id="carouselNext" aria-label="Next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+
+          <div class="carousel-dots" id="carouselDots">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+            <button class="dot" data-index="3"></button>
+            <button class="dot" data-index="4"></button>
+            <button class="dot" data-index="5"></button>
+          </div>
+        </div>
+        <!-- /carousel-outer -->
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ===== Services Section ===== -->
-<section class="section" id="services">
-    <h2 class="section-title">SERVICES</h2> 
-    <h1 class="section-subtitle">My Features & Services</h1>
-    <hr>
-    <div class="services-container">
+    <!-- ===== Resume ===== -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
 
-        <div class="service-card">
-            <img src="img/web.svg" alt="Web Development">
-            <h3>Web Development</h3>
-            <p>Mengembangkan aplikasi web responsif menggunakan framework Laravel dan CodeIgniter, 
-               dengan fokus pada performa, keamanan, dan pengalaman pengguna.</p>
+        <div class="resume-content">
+          <!-- Left -->
+          <div class="resume-left">
+            <h3>Education</h3>
+            <div class="education-item">
+              <h4>Sarjana Sistem Informasi (S1)</h4>
+              <p class="university">Universitas Muria Kudus</p>
+              <p class="date">2021 – 2025</p>
+              <p>
+                Lulusan dengan IPK 3,95. Fokus pada pengembangan web &amp;
+                mobile, perancangan sistem (UML &amp; SDLC), desain UI/UX, dan
+                manajemen basis data.
+              </p>
+              <p>
+                Skripsi:
+                <strong
+                  >Sistem Seleksi Calon Peserta Pelatihan BLK Kudus</strong
+                >
+                menggunakan metode <strong>SAW &amp; AHP-SAW</strong>.
+              </p>
+            </div>
+            <h3>Soft Skill</h3>
+            <ul class="certifications">
+              <li>Komunikasi (Advanced)</li>
+              <li>Jujur, Disiplin &amp; Bertanggung Jawab</li>
+              <li>Kerja Sama Tim (Expert)</li>
+              <li>Berpikir Kritis (Advanced)</li>
+              <li>Problem Solving (Advanced)</li>
+            </ul>
+          </div>
+
+          <!-- Right -->
+          <div class="resume-right">
+            <h3>Certifications &amp; Training</h3>
+            <ul class="certifications">
+              <li>
+                <strong>Bootcamp Kickstart Your Web Journey</strong> – Aksademy
+                (2025)
+              </li>
+              <li>
+                <strong>Coding Camp: Intro to Software Engineering</strong> –
+                RevoU (2025)
+              </li>
+              <li>
+                <strong>Introduction to ExpressJS</strong> – Simplilearn |
+                SkillUp (2025)
+              </li>
+              <li>
+                <strong>Introduction to SQL</strong> – Simplilearn | SkillUp
+                (2025)
+              </li>
+              <li>
+                <strong>IT Help Desk Support Services</strong> – UPT Komputer
+                UMK (2025)
+              </li>
+              <li><strong>Intro to Data Analytics</strong> – RevoU (2025)</li>
+              <li>
+                <strong>Full-Stack Web Development</strong> – LearningX / PT GII
+                (2024)
+              </li>
+              <li>
+                <strong>ACTION Training &amp; Certification</strong> – Trust
+                Training Partners (2022)
+              </li>
+            </ul>
+            <div class="skill">
+              <h3>Skill &amp; Technology</h3>
+              <div class="skills-grid">
+                <span class="skill-tag">HTML5</span
+                ><span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span
+                ><span class="skill-tag">Laravel</span>
+                <span class="skill-tag">CodeIgniter 4</span
+                ><span class="skill-tag">Flask</span>
+                <span class="skill-tag">React / Next.js</span
+                ><span class="skill-tag">Flet</span>
+                <span class="skill-tag">Python</span
+                ><span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span
+                ><span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Git</span
+                ><span class="skill-tag">GitHub</span>
+                <span class="skill-tag">GitLab</span
+                ><span class="skill-tag">Bitbucket</span>
+                <span class="skill-tag">Docker</span
+                ><span class="skill-tag">UML (StarUML, Visio)</span>
+                <span class="skill-tag">SDLC</span
+                ><span class="skill-tag">REST API</span>
+                <span class="skill-tag">Postman</span
+                ><span class="skill-tag">Figma</span>
+                <span class="skill-tag">Canva</span
+                ><span class="skill-tag">Looker Studio</span>
+                <span class="skill-tag">Microsoft Office</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="service-card">
-            <img src="img/app.svg" alt="App Development">
-            <h3>Mobile App Development</h3>
-            <p>Membangun aplikasi mobile interaktif menggunakan Flet dan Python, 
-               dengan antarmuka yang intuitif dan fungsional.</p>
-        </div>
+        <!-- Experience -->
+        <div class="resume-main">
+          <h3>Experience</h3>
 
-        <div class="service-card">
-            <img src="img/system.svg" alt="System Analyst">
-            <h3>System Analysis</h3>
-            <p>Melakukan analisis sistem menggunakan metode UML dan SDLC, 
-               merancang solusi digital yang efisien dan sesuai kebutuhan pengguna.</p>
-        </div>
+          <div class="exp-page active" data-page="0">
+            <div class="experience-item">
+              <div class="exp-header">
+                <div
+                  class="exp-icon"
+                  style="background: rgba(33, 150, 243, 0.15); color: #2196f3"
+                >
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <div>
+                  <h4>IT Programmer</h4>
+                  <p class="company">UIN Sunan Kudus &nbsp;·&nbsp; Contract</p>
+                  <p class="date">
+                    <i class="fa fa-calendar"></i>&nbsp; Feb 2026 – Sekarang
+                    &nbsp;·&nbsp; 2 bln &nbsp;·&nbsp; On-site, Kudus
+                  </p>
+                </div>
+              </div>
+              <p>
+                Mengembangkan dan memelihara aplikasi web menggunakan framework
+                PHP (CodeIgniter &amp; Laravel) pada sisi back-end maupun
+                front-end. Merancang dan mengelola basis data relasional di
+                MySQL mulai dari desain skema hingga optimasi performa, serta
+                membangun dan mengintegrasikan RESTful API untuk menghubungkan
+                berbagai modul sistem secara efisien. Berkolaborasi dalam tim
+                pengembangan menggunakan Git/GitLab dengan alur kerja branching
+                dan pull request, menerjemahkan kebutuhan bisnis ke spesifikasi
+                teknis, serta melakukan pengujian, deployment, dan dukungan
+                teknis berkelanjutan untuk aplikasi yang sudah berjalan.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="exp-header">
+                <div
+                  class="exp-icon"
+                  style="background: rgba(67, 160, 71, 0.15); color: #43a047"
+                >
+                  <i class="fa fa-flask"></i>
+                </div>
+                <div>
+                  <h4>Software Developer</h4>
+                  <p class="company">
+                    Badan Pengawas Obat dan Makanan (BBPOM) &nbsp;·&nbsp;
+                    Internship
+                  </p>
+                  <p class="date">
+                    <i class="fa fa-calendar"></i>&nbsp; Nov 2025 – Feb 2026
+                    &nbsp;·&nbsp; 4 bln &nbsp;·&nbsp; BBPOM Semarang, On-site
+                  </p>
+                </div>
+              </div>
+              <p>
+                Berperan dalam seluruh siklus pengembangan perangkat lunak di
+                BBPOM Semarang — mulai dari analisis kebutuhan pengguna dan
+                pemetaan alur proses bisnis untuk mendukung digitalisasi
+                layanan, perancangan arsitektur aplikasi berbasis web baik sisi
+                front-end maupun back-end, hingga pengembangan aplikasi web dan
+                mobile berperforma tinggi sesuai kebutuhan proyek.
+                Mengimplementasikan integrasi sistem dengan database dan API
+                pihak ketiga untuk alur data real-time, melakukan pengujian
+                menyeluruh, debugging, dan peningkatan fitur guna menjaga
+                stabilitas sistem, serta menyusun dokumentasi teknis dan panduan
+                pengguna yang komprehensif.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="exp-header">
+                <div
+                  class="exp-icon"
+                  style="background: rgba(255, 179, 0, 0.15); color: #ffb300"
+                >
+                  <i class="fa fa-chalkboard-teacher"></i>
+                </div>
+                <div>
+                  <h4>Asisten Dosen Praktikum</h4>
+                  <p class="company">
+                    Program Studi Sistem Informasi, Universitas Muria Kudus
+                  </p>
+                  <p class="date">
+                    <i class="fa fa-calendar"></i>&nbsp; Jul 2024 – Sep 2025
+                  </p>
+                </div>
+              </div>
+              <p>
+                Sebagai Laboratory Teaching Assistant di Universitas Muria
+                Kudus, saya berperan dalam mendukung pelaksanaan kegiatan
+                praktikum dengan memfasilitasi diskusi teknis dan membimbing
+                mahasiswa dalam memahami konsep serta penerapan teknologi
+                informasi secara lebih mendalam. Saya memimpin sesi praktikum
+                dengan memberikan penjelasan materi, membantu mahasiswa
+                menyelesaikan tugas praktikum, serta memberikan solusi atas
+                pertanyaan teknis yang muncul selama proses pembelajaran. Selain
+                itu, saya juga bertanggung jawab menjaga komunikasi yang efektif
+                antara dosen dan mahasiswa untuk memastikan kegiatan praktikum
+                berjalan lancar dan tujuan pembelajaran dapat tercapai secara
+                optimal.
+              </p>
+            </div>
+          </div>
 
-        <div class="service-card">
-            <img src="img/database.svg" alt="Database Management">
-            <h3>Database Management</h3>
-            <p>Ahli dalam manajemen RDBMS (MySQL & PostgreSQL) dan NoSQL (MongoDB), 
-               termasuk normalisasi tabel dan optimisasi performa database.</p>
-        </div>
+          <div class="exp-page" data-page="1">
+            <div class="experience-item">
+              <div class="exp-header">
+                <div
+                  class="exp-icon"
+                  style="background: rgba(0, 191, 165, 0.15); color: #00bfa5"
+                >
+                  <i class="fa fa-globe"></i>
+                </div>
+                <div>
+                  <h4>KKN – Pengembangan Web Profil Desa</h4>
+                  <p class="company">
+                    Universitas Muria Kudus &nbsp;|&nbsp; Desa Balerejo
+                  </p>
+                  <p class="date">
+                    <i class="fa fa-calendar"></i>&nbsp; Agu 2025 – Sep 2025
+                  </p>
+                </div>
+              </div>
+              <p>
+                Berperan dalam tim KKN pengembangan
+                <strong>web profil desa</strong> menggunakan
+                <strong>Flask</strong> sebagai backend dan
+                <strong>MongoDB</strong> sebagai basis data. Fitur mencakup
+                informasi administratif, potensi SDA, kegiatan masyarakat, dan
+                layanan publik. Meningkatkan literasi digital dan branding
+                komunitas lokal secara online.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="exp-header">
+                <div
+                  class="exp-icon"
+                  style="background: rgba(198, 40, 40, 0.15); color: #c62828"
+                >
+                  <i class="fa fa-layer-group"></i>
+                </div>
+                <div>
+                  <h4>Full-Stack Web Development – MSIB Batch 6</h4>
+                  <p class="company">PT Global Investment Institusi</p>
+                  <p class="date">
+                    <i class="fa fa-calendar"></i>&nbsp; Feb 2024 – Jul 2024
+                  </p>
+                </div>
+              </div>
+              <p>
+                Program studi independen bersertifikat dalam pengembangan
+                full-stack menggunakan HTML, CSS, JavaScript, Python (Flask),
+                dan MongoDB. Mengembangkan proyek nyata mulai dari desain UI/UX,
+                pembuatan API, manajemen database, hingga deployment.
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="exp-header">
+                <div
+                  class="exp-icon"
+                  style="background: rgba(171, 71, 188, 0.15); color: #ab47bc"
+                >
+                  <i class="fa fa-briefcase"></i>
+                </div>
+                <div>
+                  <h4>Praktik Kerja Lapangan (PKL) – Staf Administrasi</h4>
+                  <p class="company">UPTD Balai Latihan Kerja (BLK) Kudus</p>
+                  <p class="date">
+                    <i class="fa fa-calendar"></i>&nbsp; Jan 2024 – Feb 2024
+                  </p>
+                </div>
+              </div>
+              <p>
+                Membantu pengelolaan dokumen administrasi pelatihan, termasuk
+                pendaftaran peserta dan penyusunan laporan. Menggunakan
+                Microsoft Office dalam pengolahan data pelatihan serta memahami
+                proses administrasi publik yang efisien dan akurat.
+              </p>
+            </div>
+          </div>
 
-        <div class="service-card">
-            <img src="img/uiux.svg" alt="UI/UX Design">
-            <h3>UI/UX Design</h3>
-            <p>Mendesain antarmuka dan pengalaman pengguna yang fungsional, 
-               menggabungkan estetika dan kemudahan penggunaan dalam aplikasi web dan mobile.</p>
-        </div>
+          <div class="exp-page" data-page="2">
+            <div class="experience-item">
+              <div class="exp-header">
+                <div
+                  class="exp-icon"
+                  style="background: rgba(66, 133, 244, 0.15); color: #4285f4"
+                >
+                  <i class="fa fa-users"></i>
+                </div>
+                <div>
+                  <h4>Anggota Divisi PSDM</h4>
+                  <p class="company">
+                    UKM FIMA – Forum Ilmiah Mahasiswa, Universitas Muria Kudus
+                  </p>
+                  <p class="date">
+                    <i class="fa fa-calendar"></i>&nbsp; Jul 2022 – Jun 2023
+                  </p>
+                </div>
+              </div>
+              <p>
+                Berperan dalam proses rekrutmen anggota baru, merancang program
+                pengembangan diri, dan mengorganisasi kegiatan internal yang
+                memperkuat kerja sama tim. Fokus pada peningkatan soft skill,
+                komunikasi efektif, dan sinergi antaranggota.
+              </p>
+            </div>
+          </div>
 
-        <div class="service-card">
-            <img src="img/fullstack.svg" alt="Full-Stack Development">
-            <h3>Full-Stack Development</h3>
-            <p>Mengembangkan fitur end-to-end, dari desain UI/UX, pembuatan API, hingga pengelolaan database, 
-               untuk membangun solusi web dan mobile yang lengkap.</p>
-        </div>
-
-    </div>
-</section>
-
-  <!-- ===== Contact Section ===== -->
-<section id="contact" class="contact section">
-  <h2 class="section-title">Contact Me</h2>
-  <h1 class="section-subtitle">Get in Touch with Me</h1>
-
-  <div class="contact-content">
-    <!-- Left Info -->
-    <div class="contact-info">
-      <p class="contact-text">
-        I'm always open to discuss exciting projects and new opportunities. Let's collaborate!
-      </p>
-
-      <div class="contact-details">
-        <div class="contact-item">
-          <i class="fa-solid fa-envelope"></i>
-          <span>nawangandrian@gmail.com</span>
-        </div>
-        <div class="contact-item">
-          <i class="fa-solid fa-phone"></i>
-          <span>+62 858 6531 7821</span>
-        </div>
-        <div class="contact-item">
-          <i class="fa-solid fa-location-dot"></i>
-          <span>Kudus, Indonesia</span>
+          <div class="exp-pagination">
+            <button class="exp-page-btn active" data-target="0">1</button>
+            <button class="exp-page-btn" data-target="1">2</button>
+            <button class="exp-page-btn" data-target="2">3</button>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="social-links">
-        <a href="https://linkedin.com/in/nawang-alan-andrian-65167a2a6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/nawangandrian" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com/nawang_andrian" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/6285865317821" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <!-- ===== Services ===== -->
+    <section class="section" id="services">
+      <h2 class="section-title">SERVICES</h2>
+      <h2 class="section-subtitle">My Features &amp; Services</h2>
+      <hr
+        style="border-color: rgba(255, 255, 255, 0.08); margin-bottom: 40px"
+      />
+      <div class="services-container">
+        <div class="service-card">
+          <img src="img/web.svg" alt="Web Development" />
+          <h3>Web Development</h3>
+          <p>
+            Mengembangkan aplikasi web responsif menggunakan framework Laravel
+            dan CodeIgniter, dengan fokus pada performa, keamanan, dan
+            pengalaman pengguna.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="img/app.svg" alt="App Development" />
+          <h3>Mobile App Development</h3>
+          <p>
+            Membangun aplikasi mobile interaktif menggunakan Flet dan Python,
+            dengan antarmuka yang intuitif dan fungsional.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="img/system.svg" alt="System Analyst" />
+          <h3>System Analysis</h3>
+          <p>
+            Melakukan analisis sistem menggunakan metode UML dan SDLC, merancang
+            solusi digital yang efisien dan sesuai kebutuhan pengguna.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="img/database.svg" alt="Database Management" />
+          <h3>Database Management</h3>
+          <p>
+            Ahli dalam manajemen RDBMS (MySQL &amp; PostgreSQL) dan NoSQL
+            (MongoDB), termasuk normalisasi tabel dan optimisasi performa
+            database.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="img/uiux.svg" alt="UI/UX Design" />
+          <h3>UI/UX Design</h3>
+          <p>
+            Mendesain antarmuka dan pengalaman pengguna yang fungsional,
+            menggabungkan estetika dan kemudahan penggunaan.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="img/fullstack.svg" alt="Full-Stack Development" />
+          <h3>Full-Stack Development</h3>
+          <p>
+            Mengembangkan fitur end-to-end, dari desain UI/UX, pembuatan API,
+            hingga pengelolaan database, untuk solusi web dan mobile yang
+            lengkap.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <a href="mailto:nawangandrian@gmail.com" class="btn contact-btn">Send Email</a>
-    </div>
-  </div>
-</section>
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="contact section">
+      <h2 class="section-title">Contact Me</h2>
+      <h2 class="section-subtitle">Get in Touch with Me</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p class="contact-text">
+            I'm always open to discuss exciting projects and new opportunities.
+            Let's collaborate!
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i
+              ><span>nawangandrian@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i><span>+62 858 6531 7821</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i
+              ><span>Kudus, Indonesia</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://linkedin.com/in/nawang-alan-andrian-65167a2a6/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/nawangandrian" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://instagram.com/nawang_andrian" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/6285865317821" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+          <a href="mailto:nawangandrian@gmail.com" class="btn contact-btn"
+            >Send Email</a
+          >
+        </div>
+      </div>
+    </section>
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-  <div class="footer-container">
-    <h2 class="footer-logo">NawangDev</h2>
-    <ul class="footer-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="footer-social">
-      <a href="https://linkedin.com/in/nawang-alan-andrian-65167a2a6/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="ttps://github.com/nawangandrian" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://instagram.com/nawang_andrian" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/6285865317821" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-    <p class="footer-copy">&copy; 2025 NawangDev All Rights Reserved.</p>
-  </div>
-</footer>
-</body>
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-logo">NawangDev</h2>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-social">
+          <a
+            href="https://linkedin.com/in/nawang-alan-andrian/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/nawangandrian"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://instagram.com/nawang_andrian"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/6285865317821"
+            target="_blank"
+            aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+        <p class="footer-copy">&copy; 2025 NawangDev All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ===== Scripts ===== -->
+    <script>
+      /* ── Carousel ──────────────────────────────── */
+      (function () {
+        var track = document.getElementById("carouselTrack");
+        var prevBtn = document.getElementById("carouselPrev");
+        var nextBtn = document.getElementById("carouselNext");
+        var dots = document.querySelectorAll("#carouselDots .dot");
+        var slides = track ? track.querySelectorAll(".carousel-slide") : [];
+        var current = 0;
+        var total = slides.length;
+        if (!track || total === 0) return;
+
+        function goTo(idx) {
+          current = (idx + total) % total;
+          track.style.transform = "translateX(-" + current * 100 + "%)";
+          dots.forEach(function (d, i) {
+            d.classList.toggle("active", i === current);
+          });
+        }
+
+        function resetTimer() {
+          clearInterval(autoTimer);
+          autoTimer = setInterval(function () {
+            goTo(current + 1);
+          }, 6000);
+        }
+
+        if (prevBtn)
+          prevBtn.addEventListener("click", function () {
+            resetTimer();
+            goTo(current - 1);
+          });
+        if (nextBtn)
+          nextBtn.addEventListener("click", function () {
+            resetTimer();
+            goTo(current + 1);
+          });
+        dots.forEach(function (d) {
+          d.addEventListener("click", function () {
+            resetTimer();
+            goTo(parseInt(d.dataset.index, 10));
+          });
+        });
+
+        var startX = 0;
+        track.addEventListener(
+          "touchstart",
+          function (e) {
+            startX = e.touches[0].clientX;
+          },
+          { passive: true },
+        );
+        track.addEventListener("touchend", function (e) {
+          var diff = startX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 50) {
+            resetTimer();
+            goTo(current + (diff > 0 ? 1 : -1));
+          }
+        });
+
+        var autoTimer = setInterval(function () {
+          goTo(current + 1);
+        }, 6000);
+      })();
+
+      /* ── Experience Pagination ─────────────────── */
+      (function () {
+        var pages = document.querySelectorAll(".exp-page");
+        var pageBtns = document.querySelectorAll(".exp-page-btn");
+        function showPage(idx) {
+          pages.forEach(function (p, i) {
+            p.classList.toggle("active", i === idx);
+          });
+          pageBtns.forEach(function (b, i) {
+            b.classList.toggle("active", i === idx);
+          });
+        }
+        pageBtns.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            showPage(parseInt(btn.dataset.target, 10));
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
