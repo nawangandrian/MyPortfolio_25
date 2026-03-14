@@ -193,11 +193,11 @@
           </p>
           <div class="about-stats">
             <div class="stat-item">
-              <span class="stat-number">11+</span
+              <span class="stat-number">9+</span
               ><span class="stat-label">Projects</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number">8+</span
+              <span class="stat-number">4+</span
               ><span class="stat-label">Certs</span>
             </div>
             <div class="stat-item">
@@ -205,7 +205,7 @@
               ><span class="stat-label">Years</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number">2</span
+              <span class="stat-number">3</span
               ><span class="stat-label">Exp</span>
             </div>
           </div>
@@ -1132,54 +1132,67 @@
       <div class="services-container">
         <div class="service-card">
           <img src="img/web.svg" alt="Web Development" />
-          <h3>Web Development</h3>
-          <p>
-            Mengembangkan aplikasi web responsif menggunakan framework Laravel
-            dan CodeIgniter, dengan fokus pada performa, keamanan, dan
-            pengalaman pengguna.
-          </p>
+          <div class="svc-text">
+            <h3>Web Development</h3>
+            <p>
+              Mengembangkan aplikasi web responsif menggunakan framework Laravel
+              dan CodeIgniter, dengan fokus pada performa, keamanan, dan
+              pengalaman pengguna.
+            </p>
+          </div>
         </div>
         <div class="service-card">
           <img src="img/app.svg" alt="App Development" />
-          <h3>Mobile App Development</h3>
-          <p>
-            Membangun aplikasi mobile interaktif menggunakan Flet dan Python,
-            dengan antarmuka yang intuitif dan fungsional.
-          </p>
+          <div class="svc-text">
+            <h3>Mobile App Development</h3>
+            <p>
+              Membangun aplikasi mobile interaktif menggunakan Flet dan Python,
+              dengan antarmuka yang intuitif dan fungsional.
+            </p>
+          </div>
         </div>
         <div class="service-card">
           <img src="img/system.svg" alt="System Analyst" />
-          <h3>System Analysis</h3>
-          <p>
-            Melakukan analisis sistem menggunakan metode UML dan SDLC, merancang
-            solusi digital yang efisien dan sesuai kebutuhan pengguna.
-          </p>
+          <div class="svc-text">
+            <h3>System Analysis</h3>
+            <p>
+              Melakukan analisis sistem menggunakan metode UML dan SDLC,
+              merancang solusi digital yang efisien dan sesuai kebutuhan
+              pengguna.
+            </p>
+          </div>
         </div>
         <div class="service-card">
           <img src="img/database.svg" alt="Database" />
-          <h3>Database Management</h3>
-          <p>
-            Ahli dalam manajemen RDBMS (MySQL &amp; PostgreSQL) dan NoSQL
-            (MongoDB), termasuk normalisasi tabel dan optimisasi performa
-            database.
-          </p>
+          <div class="svc-text">
+            <h3>Database Management</h3>
+            <p>
+              Ahli dalam manajemen RDBMS (MySQL &amp; PostgreSQL) dan NoSQL
+              (MongoDB), termasuk normalisasi tabel dan optimisasi performa
+              database.
+            </p>
+          </div>
         </div>
         <div class="service-card">
           <img src="img/uiux.svg" alt="UI/UX" />
-          <h3>UI/UX Design</h3>
-          <p>
-            Mendesain antarmuka dan pengalaman pengguna yang fungsional,
-            menggabungkan estetika dan kemudahan penggunaan.
-          </p>
+          <div class="svc-text">
+            <h3>UI/UX Design</h3>
+            <p>
+              Mendesain antarmuka dan pengalaman pengguna yang fungsional,
+              menggabungkan estetika dan kemudahan penggunaan.
+            </p>
+          </div>
         </div>
         <div class="service-card">
           <img src="img/fullstack.svg" alt="Full-Stack" />
-          <h3>Full-Stack Development</h3>
-          <p>
-            Mengembangkan fitur end-to-end, dari desain UI/UX, pembuatan API,
-            hingga pengelolaan database, untuk solusi web dan mobile yang
-            lengkap.
-          </p>
+          <div class="svc-text">
+            <h3>Full-Stack Development</h3>
+            <p>
+              Mengembangkan fitur end-to-end, dari desain UI/UX, pembuatan API,
+              hingga pengelolaan database, untuk solusi web dan mobile yang
+              lengkap.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -1358,6 +1371,16 @@
         });
       })();
 
+      /* ── Real mobile viewport fix ───────────────── */
+      (function () {
+        function setVH() {
+          var vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty("--vh", vh + "px");
+        }
+        setVH();
+        window.addEventListener("resize", setVH);
+      })();
+
       /* ── Mobile Project Pagination ──────────────── */
       var mProjCurrent = 1;
       var mProjTotalPages = 3;
@@ -1386,7 +1409,8 @@
         if (sec)
           window.scrollTo({ top: sec.offsetTop - 60, behavior: "smooth" });
       }
-      // Init: show page 1
+      // Init: show page 1 — run immediately AND on DOMContentLoaded
+      mProjGo(1);
       document.addEventListener("DOMContentLoaded", function () {
         mProjGo(1);
       });
