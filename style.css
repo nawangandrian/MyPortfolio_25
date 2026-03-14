@@ -1668,3 +1668,35 @@ body {
     gap: 8px;
   }
 }
+
+/* ╔══════════════════════════════════════════════════════════╗
+   ║   SCROLL ANIMATIONS                                      ║
+   ╚══════════════════════════════════════════════════════════╝ */
+
+/* Base hidden state */
+.anim-hidden {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Direction variants */
+.anim-hidden.anim-from-bottom {
+  transform: translateY(40px);
+}
+.anim-hidden.anim-from-left {
+  transform: translateX(-50px);
+}
+.anim-hidden.anim-from-right {
+  transform: translateX(50px);
+}
+
+/* Visible state — added by JS */
+.anim-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Stagger helper — service cards & project cards get delay via JS inline style */

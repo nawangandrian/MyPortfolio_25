@@ -193,11 +193,11 @@
           </p>
           <div class="about-stats">
             <div class="stat-item">
-              <span class="stat-number">9+</span
+              <span class="stat-number">11+</span
               ><span class="stat-label">Projects</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number">4+</span
+              <span class="stat-number">8+</span
               ><span class="stat-label">Certs</span>
             </div>
             <div class="stat-item">
@@ -1384,35 +1384,34 @@
       /* ── Mobile Project Pagination ──────────────── */
       var mProjCurrent = 1;
       var mProjTotalPages = 3;
-      function mProjGo(page) {
+      function mProjGo(page, skipScroll) {
         if (page < 1 || page > mProjTotalPages) return;
         mProjCurrent = page;
-        // Show/hide cards
         document.querySelectorAll(".mobile-proj-card").forEach(function (card) {
           card.classList.toggle("visible", parseInt(card.dataset.pg) === page);
         });
-        // Update pagination buttons
         document
           .querySelectorAll(".mobile-proj-pgbtn[data-p]")
           .forEach(function (btn) {
             btn.classList.toggle("active", parseInt(btn.dataset.p) === page);
           });
-        // Update counter
         var start = (page - 1) * 3 + 1;
         var end = Math.min(page * 3, 9);
         var el = document.getElementById("mProjPage");
         var sh = document.getElementById("mProjShowing");
         if (el) el.textContent = page;
         if (sh) sh.textContent = start + "–" + end;
-        // Scroll to top of projects section
-        var sec = document.getElementById("projects");
-        if (sec)
-          window.scrollTo({ top: sec.offsetTop - 60, behavior: "smooth" });
+        // Scroll hanya saat user klik pagination, bukan saat init
+        if (!skipScroll) {
+          var sec = document.getElementById("projects");
+          if (sec)
+            window.scrollTo({ top: sec.offsetTop - 60, behavior: "smooth" });
+        }
       }
-      // Init: show page 1 — run immediately AND on DOMContentLoaded
-      mProjGo(1);
+      // Init: show page 1 tanpa scroll
+      mProjGo(1, true);
       document.addEventListener("DOMContentLoaded", function () {
-        mProjGo(1);
+        mProjGo(1, true);
       });
 
       /* ── Mobile Bottom Nav active on scroll ─────── */
@@ -1442,6 +1441,78 @@
               });
           });
         });
+      })();
+
+      /* ── Scroll Animations ──────────────────────── */
+      (function () {
+        // Tambah class anim-hidden ke semua elemen yang akan dianimasikan
+        var targets = document.querySelectorAll(
+          ".hero-left, .hero-right, " +
+            ".about-container, " +
+            ".projects-section-header, .carousel-outer, .mobile-projects-wrap, " +
+            ".resume-content, .resume-main, " +
+            ".section-title, .section-subtitle, " +
+            ".service-card, " +
+            ".contact-info, " +
+            ".mobile-proj-card",
+        );
+
+        targets.forEach(function (el, i) {
+          el.classList.add("anim-hidden");
+          // Tentukan arah berdasarkan tipe elemen
+          if (el.classList.contains("hero-left"))
+            el.classList.add("anim-from-left");
+          else if (el.classList.contains("hero-right"))
+            el.classList.add("anim-from-right");
+          else if (el.classList.contains("service-card")) {
+            el.classList.add("anim-from-bottom");
+            el.style.transitionDelay = (i % 6) * 0.08 + "s";
+          } else if (el.classList.contains("mobile-proj-card")) {
+            el.classList.add("anim-from-bottom");
+            el.style.transitionDelay = (i % 3) * 0.1 + "s";
+          } else if (el.classList.contains("resume-main"))
+            el.classList.add("anim-from-bottom");
+          else if (el.classList.contains("contact-info"))
+            el.classList.add("anim-from-bottom");
+          else el.classList.add("anim-from-bottom");
+        });
+
+        // Hero section: langsung animasi tanpa observer
+        var heroLeft = document.querySelector(".hero-left");
+        var heroRight = document.querySelector(".hero-right");
+        setTimeout(function () {
+          if (heroLeft) heroLeft.classList.add("anim-visible");
+          if (heroRight) heroRight.classList.add("anim-visible");
+        }, 100);
+
+        // IntersectionObserver untuk section lainnya
+        if ("IntersectionObserver" in window) {
+          var observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("anim-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+
+          targets.forEach(function (el) {
+            if (
+              !el.classList.contains("hero-left") &&
+              !el.classList.contains("hero-right")
+            ) {
+              observer.observe(el);
+            }
+          });
+        } else {
+          // Fallback untuk browser lama
+          targets.forEach(function (el) {
+            el.classList.add("anim-visible");
+          });
+        }
       })();
     </script>
   </body>
