@@ -68,7 +68,33 @@
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </nav>
+      <!-- Mobile only: status badge -->
+      <div class="header-status">
+        <span class="dot-live"></span> Open to Work
+      </div>
     </header>
+
+    <!-- ===== Mobile Bottom Navigation ===== -->
+    <nav class="mobile-bottom-nav" id="mobileBottomNav">
+      <a href="#home" class="active" data-section="home">
+        <i class="fa fa-house"></i><span>Home</span>
+      </a>
+      <a href="#about" data-section="about">
+        <i class="fa fa-user"></i><span>About</span>
+      </a>
+      <a href="#projects" data-section="projects">
+        <i class="fa fa-diagram-project"></i><span>Projects</span>
+      </a>
+      <a href="#resume" data-section="resume">
+        <i class="fa fa-file-lines"></i><span>Resume</span>
+      </a>
+      <a href="#services" data-section="services">
+        <i class="fa fa-gear"></i><span>Services</span>
+      </a>
+      <a href="#contact" data-section="contact">
+        <i class="fa fa-envelope"></i><span>Contact</span>
+      </a>
+    </nav>
 
     <!-- ===== Hero ===== -->
     <section class="hero" id="home">
@@ -137,9 +163,7 @@
     <section id="about" class="about section">
       <h2 class="section-title">About Me</h2>
       <div class="about-container">
-        <div class="about-img">
-          <img src="img/NAW127.png" alt="Profile" />
-        </div>
+        <div class="about-img"><img src="img/NAW127.png" alt="Profile" /></div>
         <div class="about-text">
           <h3>Building Digital Solutions That Matter</h3>
           <p class="about-tagline">
@@ -174,15 +198,15 @@
             </div>
             <div class="stat-item">
               <span class="stat-number">8+</span
-              ><span class="stat-label">Certifications</span>
+              ><span class="stat-label">Certs</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">3+</span
-              ><span class="stat-label">Years Coding</span>
+              ><span class="stat-label">Years</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">2</span
-              ><span class="stat-label">Work Experience</span>
+              ><span class="stat-label">Exp</span>
             </div>
           </div>
         </div>
@@ -200,6 +224,7 @@
           </p>
         </div>
 
+        <!-- ── DESKTOP: Carousel ─────────────────── -->
         <div class="carousel-outer">
           <button
             class="carousel-btn prev"
@@ -208,17 +233,13 @@
           >
             <i class="fa fa-chevron-left"></i>
           </button>
-
           <div class="carousel-viewport">
             <div class="carousel-track" id="carouselTrack">
               <!-- Slide 1 -->
               <div class="carousel-slide">
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda simoncer.png"
-                      alt="SIMONCER BBPOM Semarang"
-                    />
+                    <img src="img/beranda simoncer.png" alt="SIMONCER" />
                   </div>
                   <div class="project-content">
                     <h3>SIMONCER — BBPOM Semarang</h3>
@@ -242,7 +263,7 @@
                 </div>
                 <div class="project-card">
                   <div class="project-image">
-                    <img src="img/beranda pmi.png" alt="SP3 PMI Kudus" />
+                    <img src="img/beranda pmi.png" alt="SP3 PMI" />
                   </div>
                   <div class="project-content">
                     <h3>SP3 — Prediksi Pendonor PMI Kudus</h3>
@@ -268,15 +289,11 @@
                   </div>
                 </div>
               </div>
-
               <!-- Slide 2 -->
               <div class="carousel-slide">
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda seleksi.png"
-                      alt="Web Seleksi Calon Peserta Pelatihan"
-                    />
+                    <img src="img/beranda seleksi.png" alt="Seleksi BLK" />
                   </div>
                   <div class="project-content">
                     <h3>Web Seleksi Calon Peserta Pelatihan</h3>
@@ -301,10 +318,7 @@
                 </div>
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda jaket.png"
-                      alt="Website Penjualan Jaket"
-                    />
+                    <img src="img/beranda jaket.png" alt="Penjualan Jaket" />
                   </div>
                   <div class="project-content">
                     <h3>Website Penjualan Jaket</h3>
@@ -327,15 +341,11 @@
                   </div>
                 </div>
               </div>
-
               <!-- Slide 3 -->
               <div class="carousel-slide">
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda perpus.png"
-                      alt="Sistem Perpustakaan Digital"
-                    />
+                    <img src="img/beranda perpus.png" alt="Perpustakaan" />
                   </div>
                   <div class="project-content">
                     <h3>Sistem Perpustakaan Digital</h3>
@@ -360,10 +370,7 @@
                 </div>
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda mobile.jpg"
-                      alt="Sistem Penjualan Kasir Warmindo"
-                    />
+                    <img src="img/beranda mobile.jpg" alt="Kasir Warmindo" />
                   </div>
                   <div class="project-content">
                     <h3>Sistem Penjualan Kasir Warmindo</h3>
@@ -385,15 +392,11 @@
                   </div>
                 </div>
               </div>
-
               <!-- Slide 4 -->
               <div class="carousel-slide">
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda siswa.png"
-                      alt="Sistem Manajemen Data Siswa"
-                    />
+                    <img src="img/beranda siswa.png" alt="Manajemen Siswa" />
                   </div>
                   <div class="project-content">
                     <h3>Sistem Manajemen Data Siswa</h3>
@@ -417,10 +420,7 @@
                 </div>
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda rental.png"
-                      alt="Rental Management System"
-                    />
+                    <img src="img/beranda rental.png" alt="Rental System" />
                   </div>
                   <div class="project-content">
                     <h3>Rental Management System</h3>
@@ -443,15 +443,11 @@
                   </div>
                 </div>
               </div>
-
               <!-- Slide 5 -->
               <div class="carousel-slide">
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda user.png"
-                      alt="React User Management System"
-                    />
+                    <img src="img/beranda user.png" alt="React User Mgmt" />
                   </div>
                   <div class="project-content">
                     <h3>React User Management System</h3>
@@ -510,15 +506,11 @@
                   </div>
                 </div>
               </div>
-
               <!-- Slide 6 -->
               <div class="carousel-slide">
                 <div class="project-card">
                   <div class="project-image">
-                    <img
-                      src="img/beranda profil.png"
-                      alt="Sistem Web Profil Desa"
-                    />
+                    <img src="img/beranda profil.png" alt="Profil Desa" />
                   </div>
                   <div class="project-content">
                     <h3>Sistem Web Profil Desa</h3>
@@ -548,14 +540,10 @@
                 </div>
               </div>
             </div>
-            <!-- /carousel-track -->
           </div>
-          <!-- /carousel-viewport -->
-
           <button class="carousel-btn next" id="carouselNext" aria-label="Next">
             <i class="fa fa-chevron-right"></i>
           </button>
-
           <div class="carousel-dots" id="carouselDots">
             <button class="dot active" data-index="0"></button>
             <button class="dot" data-index="1"></button>
@@ -565,7 +553,288 @@
             <button class="dot" data-index="5"></button>
           </div>
         </div>
-        <!-- /carousel-outer -->
+
+        <!-- ── MOBILE: Project list, 3 per page ──── -->
+        <div class="mobile-projects-wrap">
+          <div class="mobile-proj-count">
+            Halaman <span id="mProjPage">1</span> dari
+            <span id="mProjTotal">3</span> &nbsp;·&nbsp;
+            <span id="mProjShowing">1–3</span> dari 9 proyek
+          </div>
+
+          <div class="mobile-proj-grid" id="mobileProjGrid">
+            <!-- Card 1 -->
+            <div class="mobile-proj-card" data-pg="1">
+              <div class="mobile-proj-img">
+                <img src="img/beranda simoncer.png" alt="SIMONCER" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>SIMONCER — BBPOM Semarang</h4>
+                <p>
+                  Platform monitoring CAPA real-time untuk Balai Besar POM
+                  Semarang, lengkap integrasi WhatsApp API.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>Laravel</span><span>PHP</span><span>MySQL</span
+                  ><span>WhatsApp API</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <span class="mobile-proj-link locked"
+                    ><i class="fa fa-lock"></i> Internal System</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="mobile-proj-card" data-pg="1">
+              <div class="mobile-proj-img">
+                <img src="img/beranda pmi.png" alt="SP3 PMI" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>SP3 — Prediksi Pendonor PMI Kudus</h4>
+                <p>
+                  Prediksi pendonor potensial berbasis AI (Random Forest) dengan
+                  akurasi 90–96%.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>CodeIgniter 4</span><span>Python</span
+                  ><span>Random Forest</span><span>Chart.js</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/pmi-project"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="mobile-proj-card" data-pg="1">
+              <div class="mobile-proj-img">
+                <img src="img/beranda seleksi.png" alt="Seleksi BLK" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>Web Seleksi Peserta Pelatihan BLK</h4>
+                <p>
+                  Sistem seleksi AHP-SAW + notifikasi email otomatis untuk BLK
+                  Kudus.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>CodeIgniter 4</span><span>PHP</span><span>MySQL</span
+                  ><span>Bootstrap</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/sistem-seleksi"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="mobile-proj-card" data-pg="2">
+              <div class="mobile-proj-img">
+                <img src="img/beranda jaket.png" alt="Penjualan Jaket" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>Website Penjualan Jaket</h4>
+                <p>
+                  Kasir online, manajemen produk & laporan penjualan lengkap.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>CodeIgniter 4</span><span>PHP</span><span>MySQL</span
+                  ><span>Bootstrap</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/best-jacket"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="mobile-proj-card" data-pg="2">
+              <div class="mobile-proj-img">
+                <img src="img/beranda mobile.jpg" alt="Kasir Warmindo" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>Kasir Warmindo — Desktop & Mobile</h4>
+                <p>
+                  Manajemen menu, transaksi & laporan penjualan berbasis Python
+                  Flet.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>Python</span><span>Flet</span><span>MySQL</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/project_warmindo"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="mobile-proj-card" data-pg="2">
+              <div class="mobile-proj-img">
+                <img src="img/beranda user.png" alt="React User Mgmt" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>React User Management System</h4>
+                <p>
+                  CRUD pengguna dengan ReactJS, Axios & REST API — live di
+                  Vercel.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>ReactJS</span><span>Axios</span><span>Vite</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/react-user-management"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://react-user-management-flame.vercel.app/"
+                    target="_blank"
+                    class="mobile-proj-link live"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="mobile-proj-card" data-pg="3">
+              <div class="mobile-proj-img">
+                <img src="img/beranda blog.png" alt="News NawDev" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>News NawDev Blog</h4>
+                <p>
+                  Blog teknologi full-stack dengan CMS, auth, dan dark mode.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>Next.js</span><span>TypeScript</span
+                  ><span>PostgreSQL</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/next-blog"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://next-blog-nawang.vercel.app/"
+                    target="_blank"
+                    class="mobile-proj-link live"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="mobile-proj-card" data-pg="3">
+              <div class="mobile-proj-img">
+                <img src="img/beranda profil.png" alt="Profil Desa" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>Sistem Web Profil Desa Balerejo</h4>
+                <p>
+                  Website profil desa KKN: info administratif, SDA, & layanan
+                  publik.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>Flask</span><span>Python</span><span>MongoDB</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/profil_desa"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="mobile-proj-card" data-pg="3">
+              <div class="mobile-proj-img">
+                <img src="img/beranda rental.png" alt="Rental System" />
+              </div>
+              <div class="mobile-proj-body">
+                <h4>Rental Management System</h4>
+                <p>
+                  Dashboard interaktif manajemen pelanggan, item & transaksi
+                  rental.
+                </p>
+                <div class="mobile-proj-tags">
+                  <span>Laravel</span><span>Livewire</span
+                  ><span>PostgreSQL</span>
+                </div>
+                <div class="mobile-proj-links">
+                  <a
+                    href="https://github.com/nawangandrian/rental-livewire"
+                    target="_blank"
+                    class="mobile-proj-link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /mobile-proj-grid -->
+
+          <!-- Pagination buttons -->
+          <div class="mobile-proj-pagination" id="mobileProjPagination">
+            <button
+              class="mobile-proj-pgbtn arrow"
+              id="mProjPrev"
+              onclick="mProjGo(mProjCurrent - 1)"
+            >
+              <i class="fa fa-chevron-left"></i>
+            </button>
+            <button
+              class="mobile-proj-pgbtn active"
+              data-p="1"
+              onclick="mProjGo(1)"
+            >
+              1
+            </button>
+            <button class="mobile-proj-pgbtn" data-p="2" onclick="mProjGo(2)">
+              2
+            </button>
+            <button class="mobile-proj-pgbtn" data-p="3" onclick="mProjGo(3)">
+              3
+            </button>
+            <button
+              class="mobile-proj-pgbtn arrow"
+              id="mProjNext"
+              onclick="mProjGo(mProjCurrent + 1)"
+            >
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- /mobile-projects-wrap -->
       </div>
     </section>
 
@@ -573,9 +842,7 @@
     <section id="resume" class="section">
       <div class="container">
         <h2 class="section-title">Resume</h2>
-
         <div class="resume-content">
-          <!-- Left -->
           <div class="resume-left">
             <h3>Education</h3>
             <div class="education-item">
@@ -604,8 +871,6 @@
               <li>Problem Solving (Advanced)</li>
             </ul>
           </div>
-
-          <!-- Right -->
           <div class="resume-right">
             <h3>Certifications &amp; Training</h3>
             <ul class="certifications">
@@ -671,11 +936,9 @@
             </div>
           </div>
         </div>
-
         <!-- Experience -->
         <div class="resume-main">
           <h3>Experience</h3>
-
           <div class="exp-page active" data-page="0">
             <div class="experience-item">
               <div class="exp-header">
@@ -700,11 +963,7 @@
                 front-end. Merancang dan mengelola basis data relasional di
                 MySQL mulai dari desain skema hingga optimasi performa, serta
                 membangun dan mengintegrasikan RESTful API untuk menghubungkan
-                berbagai modul sistem secara efisien. Berkolaborasi dalam tim
-                pengembangan menggunakan Git/GitLab dengan alur kerja branching
-                dan pull request, menerjemahkan kebutuhan bisnis ke spesifikasi
-                teknis, serta melakukan pengujian, deployment, dan dukungan
-                teknis berkelanjutan untuk aplikasi yang sudah berjalan.
+                berbagai modul sistem secara efisien.
               </p>
             </div>
             <div class="experience-item">
@@ -723,22 +982,16 @@
                   </p>
                   <p class="date">
                     <i class="fa fa-calendar"></i>&nbsp; Nov 2025 – Feb 2026
-                    &nbsp;·&nbsp; 4 bln &nbsp;·&nbsp; BBPOM Semarang, On-site
+                    &nbsp;·&nbsp; 4 bln &nbsp;·&nbsp; BBPOM Semarang
                   </p>
                 </div>
               </div>
               <p>
                 Berperan dalam seluruh siklus pengembangan perangkat lunak di
-                BBPOM Semarang — mulai dari analisis kebutuhan pengguna dan
-                pemetaan alur proses bisnis untuk mendukung digitalisasi
-                layanan, perancangan arsitektur aplikasi berbasis web baik sisi
-                front-end maupun back-end, hingga pengembangan aplikasi web dan
-                mobile berperforma tinggi sesuai kebutuhan proyek.
-                Mengimplementasikan integrasi sistem dengan database dan API
-                pihak ketiga untuk alur data real-time, melakukan pengujian
-                menyeluruh, debugging, dan peningkatan fitur guna menjaga
-                stabilitas sistem, serta menyusun dokumentasi teknis dan panduan
-                pengguna yang komprehensif.
+                BBPOM Semarang — analisis kebutuhan, perancangan arsitektur,
+                pengembangan front-end &amp; back-end, integrasi API pihak
+                ketiga, pengujian &amp; debugging, serta penyusunan dokumentasi
+                teknis.
               </p>
             </div>
             <div class="experience-item">
@@ -760,22 +1013,13 @@
                 </div>
               </div>
               <p>
-                Sebagai Laboratory Teaching Assistant di Universitas Muria
-                Kudus, saya berperan dalam mendukung pelaksanaan kegiatan
-                praktikum dengan memfasilitasi diskusi teknis dan membimbing
-                mahasiswa dalam memahami konsep serta penerapan teknologi
-                informasi secara lebih mendalam. Saya memimpin sesi praktikum
-                dengan memberikan penjelasan materi, membantu mahasiswa
-                menyelesaikan tugas praktikum, serta memberikan solusi atas
-                pertanyaan teknis yang muncul selama proses pembelajaran. Selain
-                itu, saya juga bertanggung jawab menjaga komunikasi yang efektif
-                antara dosen dan mahasiswa untuk memastikan kegiatan praktikum
-                berjalan lancar dan tujuan pembelajaran dapat tercapai secara
-                optimal.
+                Mendukung pelaksanaan praktikum, membimbing mahasiswa dalam
+                memahami konsep teknologi informasi, memimpin sesi diskusi
+                teknis, dan menjaga komunikasi efektif antara dosen dan
+                mahasiswa.
               </p>
             </div>
           </div>
-
           <div class="exp-page" data-page="1">
             <div class="experience-item">
               <div class="exp-header">
@@ -796,13 +1040,9 @@
                 </div>
               </div>
               <p>
-                Berperan dalam tim KKN pengembangan
-                <strong>web profil desa</strong> menggunakan
-                <strong>Flask</strong> sebagai backend dan
-                <strong>MongoDB</strong> sebagai basis data. Fitur mencakup
-                informasi administratif, potensi SDA, kegiatan masyarakat, dan
-                layanan publik. Meningkatkan literasi digital dan branding
-                komunitas lokal secara online.
+                Tim KKN pengembangan web profil desa menggunakan Flask +
+                MongoDB. Fitur: informasi administratif, potensi SDA, kegiatan
+                masyarakat, dan layanan publik.
               </p>
             </div>
             <div class="experience-item">
@@ -822,10 +1062,9 @@
                 </div>
               </div>
               <p>
-                Program studi independen bersertifikat dalam pengembangan
-                full-stack menggunakan HTML, CSS, JavaScript, Python (Flask),
-                dan MongoDB. Mengembangkan proyek nyata mulai dari desain UI/UX,
-                pembuatan API, manajemen database, hingga deployment.
+                Program studi independen bersertifikat: HTML, CSS, JavaScript,
+                Python (Flask), MongoDB. Mengembangkan proyek nyata dari desain
+                UI/UX hingga deployment.
               </p>
             </div>
             <div class="experience-item">
@@ -837,7 +1076,7 @@
                   <i class="fa fa-briefcase"></i>
                 </div>
                 <div>
-                  <h4>Praktik Kerja Lapangan (PKL) – Staf Administrasi</h4>
+                  <h4>Praktik Kerja Lapangan – Staf Administrasi</h4>
                   <p class="company">UPTD Balai Latihan Kerja (BLK) Kudus</p>
                   <p class="date">
                     <i class="fa fa-calendar"></i>&nbsp; Jan 2024 – Feb 2024
@@ -845,14 +1084,11 @@
                 </div>
               </div>
               <p>
-                Membantu pengelolaan dokumen administrasi pelatihan, termasuk
-                pendaftaran peserta dan penyusunan laporan. Menggunakan
-                Microsoft Office dalam pengolahan data pelatihan serta memahami
-                proses administrasi publik yang efisien dan akurat.
+                Pengelolaan dokumen administrasi pelatihan, pendaftaran peserta,
+                dan penyusunan laporan menggunakan Microsoft Office.
               </p>
             </div>
           </div>
-
           <div class="exp-page" data-page="2">
             <div class="experience-item">
               <div class="exp-header">
@@ -864,23 +1100,19 @@
                 </div>
                 <div>
                   <h4>Anggota Divisi PSDM</h4>
-                  <p class="company">
-                    UKM FIMA – Forum Ilmiah Mahasiswa, Universitas Muria Kudus
-                  </p>
+                  <p class="company">UKM FIMA – Forum Ilmiah Mahasiswa, UMK</p>
                   <p class="date">
                     <i class="fa fa-calendar"></i>&nbsp; Jul 2022 – Jun 2023
                   </p>
                 </div>
               </div>
               <p>
-                Berperan dalam proses rekrutmen anggota baru, merancang program
-                pengembangan diri, dan mengorganisasi kegiatan internal yang
-                memperkuat kerja sama tim. Fokus pada peningkatan soft skill,
-                komunikasi efektif, dan sinergi antaranggota.
+                Rekrutmen anggota baru, merancang program pengembangan diri, dan
+                mengorganisasi kegiatan internal untuk memperkuat kerja sama tim
+                dan soft skill.
               </p>
             </div>
           </div>
-
           <div class="exp-pagination">
             <button class="exp-page-btn active" data-target="0">1</button>
             <button class="exp-page-btn" data-target="1">2</button>
@@ -924,7 +1156,7 @@
           </p>
         </div>
         <div class="service-card">
-          <img src="img/database.svg" alt="Database Management" />
+          <img src="img/database.svg" alt="Database" />
           <h3>Database Management</h3>
           <p>
             Ahli dalam manajemen RDBMS (MySQL &amp; PostgreSQL) dan NoSQL
@@ -933,7 +1165,7 @@
           </p>
         </div>
         <div class="service-card">
-          <img src="img/uiux.svg" alt="UI/UX Design" />
+          <img src="img/uiux.svg" alt="UI/UX" />
           <h3>UI/UX Design</h3>
           <p>
             Mendesain antarmuka dan pengalaman pengguna yang fungsional,
@@ -941,7 +1173,7 @@
           </p>
         </div>
         <div class="service-card">
-          <img src="img/fullstack.svg" alt="Full-Stack Development" />
+          <img src="img/fullstack.svg" alt="Full-Stack" />
           <h3>Full-Stack Development</h3>
           <p>
             Mengembangkan fitur end-to-end, dari desain UI/UX, pembuatan API,
@@ -1039,7 +1271,6 @@
         <p class="footer-copy">
           &copy; <span id="year"></span> NawangDev All Rights Reserved.
         </p>
-
         <script>
           document.getElementById("year").textContent =
             new Date().getFullYear();
@@ -1049,17 +1280,16 @@
 
     <!-- ===== Scripts ===== -->
     <script>
-      /* ── Carousel ──────────────────────────────── */
+      /* ── Carousel (desktop) ─────────────────────── */
       (function () {
         var track = document.getElementById("carouselTrack");
         var prevBtn = document.getElementById("carouselPrev");
         var nextBtn = document.getElementById("carouselNext");
         var dots = document.querySelectorAll("#carouselDots .dot");
         var slides = track ? track.querySelectorAll(".carousel-slide") : [];
-        var current = 0;
-        var total = slides.length;
+        var current = 0,
+          total = slides.length;
         if (!track || total === 0) return;
-
         function goTo(idx) {
           current = (idx + total) % total;
           track.style.transform = "translateX(-" + current * 100 + "%)";
@@ -1067,14 +1297,12 @@
             d.classList.toggle("active", i === current);
           });
         }
-
         function resetTimer() {
           clearInterval(autoTimer);
           autoTimer = setInterval(function () {
             goTo(current + 1);
           }, 6000);
         }
-
         if (prevBtn)
           prevBtn.addEventListener("click", function () {
             resetTimer();
@@ -1091,7 +1319,6 @@
             goTo(parseInt(d.dataset.index, 10));
           });
         });
-
         var startX = 0;
         track.addEventListener(
           "touchstart",
@@ -1107,13 +1334,12 @@
             goTo(current + (diff > 0 ? 1 : -1));
           }
         });
-
         var autoTimer = setInterval(function () {
           goTo(current + 1);
         }, 6000);
       })();
 
-      /* ── Experience Pagination ─────────────────── */
+      /* ── Experience Pagination ──────────────────── */
       (function () {
         var pages = document.querySelectorAll(".exp-page");
         var pageBtns = document.querySelectorAll(".exp-page-btn");
@@ -1128,6 +1354,68 @@
         pageBtns.forEach(function (btn) {
           btn.addEventListener("click", function () {
             showPage(parseInt(btn.dataset.target, 10));
+          });
+        });
+      })();
+
+      /* ── Mobile Project Pagination ──────────────── */
+      var mProjCurrent = 1;
+      var mProjTotalPages = 3;
+      function mProjGo(page) {
+        if (page < 1 || page > mProjTotalPages) return;
+        mProjCurrent = page;
+        // Show/hide cards
+        document.querySelectorAll(".mobile-proj-card").forEach(function (card) {
+          card.classList.toggle("visible", parseInt(card.dataset.pg) === page);
+        });
+        // Update pagination buttons
+        document
+          .querySelectorAll(".mobile-proj-pgbtn[data-p]")
+          .forEach(function (btn) {
+            btn.classList.toggle("active", parseInt(btn.dataset.p) === page);
+          });
+        // Update counter
+        var start = (page - 1) * 3 + 1;
+        var end = Math.min(page * 3, 9);
+        var el = document.getElementById("mProjPage");
+        var sh = document.getElementById("mProjShowing");
+        if (el) el.textContent = page;
+        if (sh) sh.textContent = start + "–" + end;
+        // Scroll to top of projects section
+        var sec = document.getElementById("projects");
+        if (sec)
+          window.scrollTo({ top: sec.offsetTop - 60, behavior: "smooth" });
+      }
+      // Init: show page 1
+      document.addEventListener("DOMContentLoaded", function () {
+        mProjGo(1);
+      });
+
+      /* ── Mobile Bottom Nav active on scroll ─────── */
+      (function () {
+        var mobileLinks = document.querySelectorAll(".mobile-bottom-nav a");
+        var sections = document.querySelectorAll("section[id]");
+        function updateActive() {
+          var scrollY = window.scrollY + window.innerHeight * 0.35;
+          var current = "";
+          sections.forEach(function (sec) {
+            if (scrollY >= sec.offsetTop) current = sec.id;
+          });
+          mobileLinks.forEach(function (a) {
+            a.classList.toggle("active", a.dataset.section === current);
+          });
+        }
+        window.addEventListener("scroll", updateActive, { passive: true });
+        updateActive();
+        mobileLinks.forEach(function (a) {
+          a.addEventListener("click", function (e) {
+            e.preventDefault();
+            var target = document.querySelector(a.getAttribute("href"));
+            if (target)
+              window.scrollTo({
+                top: target.offsetTop - 56,
+                behavior: "smooth",
+              });
           });
         });
       })();
